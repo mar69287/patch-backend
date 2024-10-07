@@ -4,7 +4,8 @@ import cors from 'cors';
 import morgan from 'morgan';
 
 import connectDB from './config/database.js';
-import userRoutes from './routes/userRoutes.js'
+import userRoutes from './routes/userRoutes.js';
+import gameRoutes from './routes/gameRoutes.js';
 
 dotenv.config();
 
@@ -13,7 +14,8 @@ app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
 
-app.use('/api/v1/users', userRoutes)
+// app.use('/api/v1/users', userRoutes)
+app.use('/api/v1/games', gameRoutes)
 
 app.get('/', async (req, res) => {
     res.send('hello from Server Side!')
