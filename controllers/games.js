@@ -1,5 +1,6 @@
 import Game from '../models/game.js';
 import Genre from '../models/genre.js';
+import Platform from '../models/platform.js';
 
 export { 
         getGames, 
@@ -8,28 +9,32 @@ export {
     async function getGames(req, res) {
         try {
             const games = await Game.find();
-    
             const genres = await Genre.find();
+            const platforms = await Platform.find();
     
-            res.status(200).json({ games, genres });
+            res.status(200).json({
+                games,
+                genres,
+                platforms,
+            });
         } catch (error) {
-            console.error('Error fetching games and genres from the database:', error.message);
-            res.status(500).json({ error: 'Failed to fetch games and genres from the database' });
+            console.error('Error fetching data from MongoDB:', error.message);
+            res.status(500).json({ error: 'Failed to fetch data from the database' });
         }
     }
 
-    // call to get all games
-    // try {
-    //     const games = await Game.find(); 
+        // try {
+        //     const games = await Game.find();
+    
+        //     const genres = await Genre.find();
+    
+        //     res.status(200).json({ games, genres });
+        // } catch (error) {
+        //     console.error('Error fetching games and genres from the database:', error.message);
+        //     res.status(500).json({ error: 'Failed to fetch games and genres from the database' });
+        // }
 
-
-    //     res.status(200).json(games);
-    // } catch (error) {
-    //     console.error('Error fetching games from the database:', error.message);
-    //     res.status(500).json({ error: 'Failed to fetch games from the database' });
-    // }
-
-            // this is the code for rawg
+        // this is the code for rawg
         // const rawgApiKey = process.env.RAWG_API_KEY; 
         // const apiUrl = `https://api.rawg.io/api/games?ordering=-rating&page_size=100&key=${rawgApiKey}&tags=multiplayer`;
     
