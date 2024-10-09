@@ -1,13 +1,12 @@
 import mongoose from 'mongoose';
 
-// Define the schema for the patch notes
 const PatchNoteSchema = new mongoose.Schema({
     title: { type: String }, 
     content: { type: String }, 
     releaseDate: { type: String } 
 });
 
-// Define the schema for the game
+
 const GameSchema = new mongoose.Schema({
     name: { type: String, required: true },
     slug: { type: String, unique: true, required: true },
