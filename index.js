@@ -25,7 +25,7 @@ const port = process.env.PORT || 8080;
 const startServer = async () => {
     try {
       connectDB(process.env.DATABASE_URL);
-      app.listen(8080, () => console.log(`Express app running on port ${port}`));
+      app.listen(port, () => console.log(`Express app running on port ${port}`));
     } catch (error) {
       console.log(error);
     }
