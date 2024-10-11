@@ -2039,14 +2039,3 @@ export const patchNotes = [
     ]
   }  
 ];
-  
-// that was great. no need to send me the names of the old ones. i will send more games and patches. thank you
-// sections: [
-//     {
-// subtitle: ClubARK: Steampunk Ascent Expansion is live! v113
-//       bullets: [
-//         "ClubARK has received a Steampunk makeover!",
-//         "Fixed a crash"
-//       ]
-//     }
-// ]
