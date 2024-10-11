@@ -2,12 +2,11 @@ import express from 'express';
 import * as dotenv from 'dotenv';
 import cors from 'cors';
 import morgan from 'morgan';
-// import Game from './models/game.js'
-// import { patchNotes } from './patchNotesData.js';
+import { bot, initializeBot } from './discord/discordClient.js';
 
 import connectDB from './config/database.js';
-// import userRoutes from './routes/userRoutes.js';
 import gameRoutes from './routes/gameRoutes.js';
+// import userRoutes from './routes/userRoutes.js';
 
 dotenv.config();
 
@@ -16,20 +15,11 @@ app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
 
-// app.use('/api/v1/users', userRoutes)
 app.use('/api/v1/games', gameRoutes)
+// app.use('/api/v1/users', userRoutes)
 
 app.get('/', async (req, res) => {
     res.send('hello from Server Side!')
-});
-
-app.post('/discord-webhook', (req, res) => {
-  const { username, content } = req.body;
-
-  console.log(`Message from ${username}: ${content}`);
-
-
-  res.status(200).send('Webhook received!');
 });
 
 const port = process.env.PORT || 8080;
@@ -38,6 +28,8 @@ const startServer = async () => {
     try {
       connectDB(process.env.DATABASE_URL);
       app.listen(port, () => console.log(`Express app running on port ${port}`));
+      initializeBot();
+      bot.login(process.env.DISCORD_BOT_TOKEN);
     } catch (error) {
       console.log(error);
     }
