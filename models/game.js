@@ -3,9 +3,13 @@ import mongoose from 'mongoose';
 const PatchNoteSchema = new mongoose.Schema({
     title: { type: String }, 
     content: { type: String }, 
-    releaseDate: { type: String } 
+    releaseDate: { type: String }, 
+    link: { type: String }, 
+    sections: [{ 
+        subtitle: { type: String }, 
+        bullets: { type: [String] } 
+    }] 
 });
-
 
 const GameSchema = new mongoose.Schema({
     name: { type: String, required: true },
@@ -14,7 +18,8 @@ const GameSchema = new mongoose.Schema({
     background_image: { type: String },
     platforms: { type: [String], required: true }, 
     genres: { type: [String], required: true },
-    patchNotes: [PatchNoteSchema], 
+    patchNotes: [PatchNoteSchema],
+    released: { type: [String], required: true }
 }, {
     timestamps: true, 
 });
