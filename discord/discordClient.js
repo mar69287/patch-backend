@@ -1,7 +1,7 @@
-import { Client, GatewayIntentBits } from 'discord.js';
-import Game from '../models/game.js';
+import { Client, GatewayIntentBits, REST, Routes } from 'discord.js';
+import { handleMessage } from './messageHandler.js';
 
-// Initialize the bot client
+// Initialize the first bot (Patch Listener)
 export const bot = new Client({
   intents: [
     GatewayIntentBits.Guilds,
@@ -10,102 +10,54 @@ export const bot = new Client({
   ],
 });
 
-// Function to process and save message data
-const saveMessageToFile = async (message) => {
-  if (message.embeds.length > 0) {
+// Initialize the second bot (Patch Tracker)
+export const trackerBot = new Client({
+  intents: [
+    GatewayIntentBits.Guilds,
+    GatewayIntentBits.GuildMessages,
+    GatewayIntentBits.MessageContent,
+  ],
+});
 
-    const embed = message.embeds[0];
-
-    if (!embed.author || !embed.author.name) {
-      console.log('Embed author name is missing, skipping this message.');
-      return;
-    }
-
-    const gameName = embed.author.name; 
-    console.log(`Processing patch for game: ${gameName}`);
-
-    // Ensure the game exists in the database first
-    const game = await Game.findOne({ name: { $regex: new RegExp(`^${gameName}$`, 'i') } });
-    
-    if (!game) {
-      console.log(`Game with name "${gameName}" not found in the database, skipping this patch.`);
-      return;
-    }
-
-    const description = embed.description || "";
-
-    const splitIndex = description.indexOf('\n-');
-
-    let patchContent = "";
-    let bullets = [];
-
-    if (splitIndex !== -1) {
-      // Content before '\n-' is the main patch content
-      patchContent = description.slice(0, splitIndex).trim();
-      
-      // Everything after '\n-' are bullet points, split by each subsequent '\n-'
-      bullets = description.slice(splitIndex + 1).split('\n-').map(bullet => bullet.trim()).filter(bullet => bullet.length > 0);
-    } else {
-      patchContent = description.trim();
-    }
-
-
-    const patchDetails = {
-      title: embed.title || "No Title Provided",
-      content: patchContent, 
-      createdAt: message.createdAt,
-      url: embed.url,
-      bullets: bullets 
-    };
-
-    // Save the patch details to the database
-    await savePatchToDatabase(game, patchDetails);
-  } else {
-    console.log('Message does not contain an embed.');
-  }
-};
-
-// Function to save patch details to the database with your schema
-const savePatchToDatabase = async (game, patchDetails) => {
-  try {
-
-    const newPatchNote = {
-      title: patchDetails.title || "No Title Provided",
-      content: patchDetails.content || "No Description Provided",
-      releaseDate: patchDetails.createdAt.toISOString(), 
-      link: patchDetails.url || "",
-      sections: [
-        {
-          bullets: patchDetails.bullets || [],
-        }
-      ]
-    };
-
-    // Add the new patch note to the game's patchNotes array
-    game.patchNotes.push(newPatchNote);
-    
-    // Save the updated game
-    await game.save();
-    
-    console.log(`Patch for game "${game.name}" has been added to the database.`);
-  } catch (error) {
-    console.error('Error saving patch to the database:', error.message);
-  }
-};
-
-// Function to initialize the bot and listen for events
+// Function to initialize the first bot (Patch Listener)
 export const initializeBot = () => {
   bot.once('ready', () => {
-    console.log(`Logged in as ${bot.user.tag}!`);
+    console.log(`Patch Listener Bot logged in as ${bot.user.tag}!`);
   });
 
   bot.on('messageCreate', async (message) => {
     try {
       console.log(`Message from ${message.author.username}: ${message.content}`);
-      // Save the message data to the JSON file and database
-      await saveMessageToFile(message);
+      // Pass the message to the message handler
+      await handleMessage(message);
     } catch (error) {
-      console.error('Error processing message:', error.message);
+      console.error('Error processing message in Patch Listener:', error.message);
     }
   });
+
+  // Log in with the bot token for the first bot
+  bot.login(process.env.DISCORD_BOT_TOKEN);
+};
+
+
+// Function to initialize the second bot (Patch Tracker)
+export const initializeTrackerBot = () => {
+
+    trackerBot.once('ready', () => {
+        console.log(`Patch Tracker Bot logged in as ${trackerBot.user.tag}!`);
+    });
+  
+    // Listen for interaction (slash commands)
+    trackerBot.on('interactionCreate', async (interaction) => {
+      if (!interaction.isCommand()) return;
+  
+      const { commandName, options } = interaction;
+  
+      if (commandName === 'follow') {
+        const gameName = options.getString('game_name'); // Get the game name from the slash command
+        await handleFollowCommand(interaction, gameName); // Pass the interaction and game name to the handler
+      }
+    });
+  
+    trackerBot.login(process.env.DISCORD_TRACKER_BOT_TOKEN);
 };
