@@ -1,5 +1,6 @@
 import { Client, GatewayIntentBits, REST, Routes } from 'discord.js';
 import { handleMessage } from './messageHandler.js';
+import { followCommand } from './commands/followCommand.js';
 
 // Initialize the first bot (Patch Listener)
 export const bot = new Client({
@@ -54,8 +55,7 @@ export const initializeTrackerBot = () => {
       const { commandName, options } = interaction;
   
       if (commandName === 'follow') {
-        const gameName = options.getString('game_name'); // Get the game name from the slash command
-        await handleFollowCommand(interaction, gameName); // Pass the interaction and game name to the handler
+        await followCommand.execute(interaction);
       }
     });
   
