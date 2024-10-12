@@ -1,0 +1,73 @@
+{
+  "author": {
+    "id": "697091274456694847",
+    "username": "marcoaruiz0510",
+    "discriminator": "0",
+    "bot": false
+  },
+  "content": "Hello",
+  "createdAt": "2024-10-11T23:46:40.725Z",
+  "embeds": [],
+  "attachments": [],
+  "mentions": [],
+  "links": []
+},
+{
+  "author": {
+    "id": "697091274456694847",
+    "username": "marcoaruiz0510",
+    "discriminator": "0",
+    "bot": false
+  },
+  "content": "Test again",
+  "createdAt": "2024-10-11T23:46:51.111Z",
+  "embeds": [],
+  "attachments": [],
+  "mentions": [],
+  "links": []
+},
+{
+  "author": {
+    "id": "697091274456694847",
+    "username": "marcoaruiz0510",
+    "discriminator": "0",
+    "bot": false
+  },
+  "content": "Another test",
+  "createdAt": "2024-10-11T23:49:03.481Z",
+  "embeds": [],
+  "attachments": [],
+  "mentions": [],
+  "links": []
+},
+{
+  "author": {
+    "id": "1294317965180801145",
+    "username": "PatchBot",
+    "discriminator": "0000",
+    "bot": true
+  },
+  "content": "",
+  "createdAt": "2024-10-12T00:02:02.409Z",
+  "embeds": [
+    {
+      "url": "https://patchbot.io/click/MTgyMDl8OTgxNjMzfGh0dHBzJTNBJTJGJTJGZm9ydW1zLnBsYXlkZWFkbG9jay5jb20lMkZ0aHJlYWRzJTJGMTAtMTEtMjAyNC11cGRhdGUuMzc2NDElMkZ8MHwxMjk0MzE2Mzg3NTI2Nzc0Nzg2fA%3D%3D",
+      "type": "rich",
+      "title": "10-11-2024 Update",
+      "thumbnail": {
+        "width": 192,
+        "url": "https://cdn.patchbot.io/games/206/deadlock_1725125549_sm.webp",
+        "proxy_url": "https://images-ext-1.discordapp.net/external/vdSF2NU1RNhK9y3oB2_BjEl6QvIq_t2pwoDTXJVyHok/https/cdn.patchbot.io/games/206/deadlock_1725125549_sm.webp",
+        "height": 192
+      },
+      "description": "Bebop: Sticky Bomb no longer has a cap (was 15 stacks)  \n- Bebop: Sticky Bomb scaling per hero reduced from 4% to 3% (previous uncapped was 2.5%)  \n- Bebop: Sticky Bomb still loses 2 stacks on death  \n- Bebop: Fixed some hook bugs causing it to sometimes not grab heroes near cover but still in collision range  \n- Bebop: Hook collision against troopers reduced to 12 (default is 33)  \n- Bebop: Hook no longer kills troopers (so you can bomb/uppercut/melee them)  \n...",
+      "color": 15785919,
+      "author": {
+        "name": "Deadlock"
+      }
+    }
+  ],
+  "attachments": [],
+  "mentions": [],
+  "links": []
+},
