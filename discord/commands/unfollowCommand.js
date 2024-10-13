@@ -1,5 +1,6 @@
 import Follow from '../../models/follow.js';
-import { EmbedBuilder } from 'discord.js'; // Import EmbedBuilder for formatting messages
+import Game from '../../models/game.js';
+import { EmbedBuilder } from 'discord.js';
 
 export const unfollowCommand = {
     name: 'unfollow',
@@ -17,11 +18,37 @@ export const unfollowCommand = {
       const serverId = interaction.guildId;
   
       try {
-        // Simply print the game and server for now (we'll add logic later)
-        console.log(`Server ${serverId} requested to unfollow game: ${gameName}`);
+        const game = await Game.findOne({ slug: { $regex: new RegExp(`^${gameName}$`, 'i') } });
+        
+        if (!game) {
+          await interaction.reply(`The game "${gameName}" does not exist. Please make sure you have the correct game ID.`);
+          return;
+        }
 
-        // For now, send a response to the user
-        await interaction.reply(`You have requested to unfollow **${gameName}**.`);
+        // 2. Check if the server is following the game
+        const follow = await Follow.findOne({ serverId });
+
+        if (!follow || !follow.followedGames.includes(game.slug)) {
+          // Server is not following the game
+          await interaction.reply(`Your server is not following updates for **${game.name}**.`);
+          return;
+        }
+
+        // 3. If following, remove the game from the followed list
+        follow.followedGames = follow.followedGames.filter(g => g !== game.slug);
+        await follow.save(); // Save the updated follow list
+
+        // 4. Success response
+        const embed = new EmbedBuilder()
+          .setTitle(`Unfollowed: ${game.name}`)
+          .setColor('#FF0000') // Red color for unfollow
+          .setDescription(`You have successfully unfollowed updates for **${game.name}**.`)
+          .setFooter({ text: 'You will no longer receive patch updates for this game.' });
+
+        console.log(`Server ${serverId} has unfollowed game: ${game.name}`);
+
+        await interaction.reply({ embeds: [embed] });
+
       } catch (error) {
         console.error(`Error while trying to unfollow game ${gameName}:`, error);
         await interaction.reply(`Failed to unfollow **${gameName}**. Please try again later.`);
