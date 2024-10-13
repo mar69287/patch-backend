@@ -3,7 +3,8 @@ import * as dotenv from 'dotenv';
 import cors from 'cors';
 import morgan from 'morgan';
 import { initializeBot, initializeTrackerBot } from './discord/discordClient.js';
-import { registerCommands } from './discord/commands/registerCommands.js';
+// import { registerCommands } from './discord/commands/registerCommands.js';
+// import { postPatchToTwitter } from './twitter/twitterClient.js'; 
 
 import connectDB from './config/database.js';
 import gameRoutes from './routes/gameRoutes.js';
@@ -34,7 +35,6 @@ const startServer = async () => {
     // await registerCommands();
     initializeBot(); 
     initializeTrackerBot(); 
-
   } catch (error) {
     console.log(error);
   }

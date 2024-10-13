@@ -1,9 +1,8 @@
-// Import the trackerBot so you can use it to send messages
 import { trackerBot } from './discordClient.js'; 
 import pkg from 'discord.js';
-const { EmbedBuilder } = pkg; // Use EmbedBuilder instead of MessageEmbed
-
+const { EmbedBuilder } = pkg; 
 import Follow from '../models/follow.js';
+import { postPatchToTwitter } from '../twitter/twitterClient.js';
 
 export const savePatchToDatabase = async (game, patchDetails) => {
   try {
@@ -27,8 +26,9 @@ export const savePatchToDatabase = async (game, patchDetails) => {
 
     console.log(`Patch for game "${game.name}" has been added to the database.`);
 
-    // After saving the game, send the latest patch to the Discord server
+    // After saving the game, send the latest patch to the Discord server and post to twitter
     await sendPatchToDiscord(game, newPatchNote);
+    await postPatchToTwitter(game, newPatchNote);
     
   } catch (error) {
     console.error('Error saving patch to the database:', error.message);
@@ -46,13 +46,13 @@ const sendPatchToDiscord = async (game, patchNote) => {
     }
 
     // Create the embed message
-    const embed = new EmbedBuilder() // Use EmbedBuilder instead of MessageEmbed
+    const embed = new EmbedBuilder() 
       .setTitle(`New Patch Update for ${game.name}`)
-      .setColor('#0099ff') // You can set the color to anything you like
+      .setColor('#0099ff') 
       .setDescription(patchNote.content)
       .addFields(
-        { name: 'Title', value: patchNote.title, inline: false }, // Inline false
-        { name: 'Release Date', value: patchNote.releaseDate, inline: true }, // Inline true
+        { name: 'Title', value: patchNote.title, inline: false }, 
+        { name: 'Release Date', value: patchNote.releaseDate, inline: true }, 
         { 
           name: 'Patch Details', 
           value: patchNote.sections.length > 0 ? patchNote.sections[0].bullets.join('\n- ') : 'No details available', 
