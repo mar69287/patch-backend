@@ -1,12 +1,16 @@
 // discord/commands/registerCommands.js
 import { REST, Routes } from 'discord.js';
-import { followCommand } from './followCommand.js'; // Adjust the path if needed
+import { followCommand } from './followCommand.js'; 
+import { unfollowCommand } from './unfollowCommand.js'; // Add the new unfollow command
 
 // Function to register the commands
 export const registerCommands = async () => {
-    const DISCORD_TRACKER_BOT_TOKEN = process.env.DISCORD_TRACKER_BOT_TOKEN;
-const CLIENT_ID = process.env.DISCORD_CLIENT_ID;
-  const commands = [followCommand];
+  const DISCORD_TRACKER_BOT_TOKEN = process.env.DISCORD_TRACKER_BOT_TOKEN;
+  const CLIENT_ID = process.env.DISCORD_CLIENT_ID;
+  const commands = [
+    followCommand, 
+    unfollowCommand, 
+  ];
 
   const rest = new REST({ version: '10' }).setToken(DISCORD_TRACKER_BOT_TOKEN);
 
@@ -14,7 +18,7 @@ const CLIENT_ID = process.env.DISCORD_CLIENT_ID;
     console.log('Started registering application (/) commands.');
 
     await rest.put(
-      Routes.applicationCommands(CLIENT_ID), // Or Routes.applicationGuildCommands for guild-specific commands
+      Routes.applicationCommands(CLIENT_ID), 
       { body: commands }
     );
 

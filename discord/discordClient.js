@@ -1,6 +1,7 @@
 import { Client, GatewayIntentBits, REST, Routes } from 'discord.js';
 import { handleMessage } from './messageHandler.js';
 import { followCommand } from './commands/followCommand.js';
+import { unfollowCommand } from './commands/unfollowCommand.js';
 
 // Initialize the first bot (Patch Listener)
 export const bot = new Client({
@@ -56,6 +57,8 @@ export const initializeTrackerBot = () => {
   
       if (commandName === 'follow') {
         await followCommand.execute(interaction);
+      } else if (commandName === 'unfollow') { 
+        await unfollowCommand.execute(interaction);
       }
     });
   
