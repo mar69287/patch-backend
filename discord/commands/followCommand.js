@@ -1,5 +1,6 @@
 import Follow from '../../models/follow.js';
-import Game from '../../models/game.js'
+import Game from '../../models/game.js';
+import { EmbedBuilder } from 'discord.js'; 
 
 export const followCommand = {
     name: 'follow',
@@ -8,7 +9,7 @@ export const followCommand = {
       {
         name: 'game_name',
         description: 'The name of the game or feature you want to follow',
-        type: 3, // String type
+        type: 3,
         required: true,
       },
     ],
@@ -17,11 +18,17 @@ export const followCommand = {
       const serverId = interaction.guildId;
   
       try {
-        // Check if the game exists in the database (case-insensitive)
         const game = await Game.findOne({ slug: { $regex: new RegExp(`^${gameName}$`, 'i') } });
         
         if (!game) {
-          await interaction.reply(`The game "${gameName}" does not exist. Please ensure you are adding correct game id.`);
+          // Game doesn't exist in the database
+          const notFoundEmbed = new EmbedBuilder()
+            .setTitle('Game Not Found')
+            .setColor('#FF0000') 
+            .setDescription(`The game "${gameName}" does not exist. Please ensure you are adding the correct game ID.`)
+            .setFooter({ text: 'Try checking the game name and try again.' });
+
+          await interaction.reply({ embeds: [notFoundEmbed] });
           return;
         }
 
@@ -32,24 +39,37 @@ export const followCommand = {
           // If not, create a new entry
           follow = new Follow({ serverId, followedGames: [game.slug] });
         } else {
-          // Add the game slug to the followedGames list if not already followed
           if (!follow.followedGames.includes(game.slug)) {
             follow.followedGames.push(game.slug);
           } else {
-            await interaction.reply(`You are already following updates for ${gameName}.`);
+            // Already following this game
+            const alreadyFollowingEmbed = new EmbedBuilder()
+              .setTitle('Already Following')
+              .setColor('#FFA500') 
+              .setDescription(`You are already following updates for **${game.name}**!`)
+              .setFooter({ text: 'You will continue to receive updates for this game.' });
+
+            await interaction.reply({ embeds: [alreadyFollowingEmbed] });
             return;
           }
         }
   
         // Save the follow information
         await follow.save();
-  
+
+        // Create the embed message for successful follow
+        const successEmbed = new EmbedBuilder()
+          .setTitle(`Game Followed`)
+          .setColor('#00FF00') 
+          .setDescription(`You are now following updates for **${game.name}**!`)
+          .setFooter({ text: 'You will receive all updates directly here!' });
+
         console.log(`Server ${serverId} is now following game: ${gameName}`);
   
-        await interaction.reply(`You are now following updates for ${gameName}! Future updates will be posted here.`);
+        await interaction.reply({ embeds: [successEmbed] }); 
       } catch (error) {
         console.error(`Error while following game ${gameName}:`, error);
-        await interaction.reply(`Failed to follow ${gameName}. Please try again later.`);
+        await interaction.reply(`Failed to follow **${gameName}**. Please try again later.`);
       }
     },
 };

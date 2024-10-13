@@ -1,5 +1,9 @@
 // Import the trackerBot so you can use it to send messages
 import { trackerBot } from './discordClient.js'; 
+import pkg from 'discord.js';
+const { EmbedBuilder } = pkg; // Use EmbedBuilder instead of MessageEmbed
+
+import Follow from '../models/follow.js';
 
 export const savePatchToDatabase = async (game, patchDetails) => {
   try {
@@ -34,30 +38,50 @@ export const savePatchToDatabase = async (game, patchDetails) => {
 // Function to send the patch note to the Discord server via trackerBot
 const sendPatchToDiscord = async (game, patchNote) => {
   try {
-    // Customize your message content here, including the title, content, and other patch details
-    // const messageContent = `
-    //   **New Patch Update for ${game.name}:**
-    //   **Title:** ${patchNote.title}
-    //   **Release Date:** ${patchNote.releaseDate}
-    //   **Details:**
-    //   ${patchNote.content}
+    const followers = await Follow.find({ followedGames: game.slug });
 
-    //   **Link:** ${patchNote.link}
-    //   ${patchNote.sections.length > 0 ? `**Details:** ${patchNote.sections[0].bullets.join('\n- ')}` : ''}
-    // `;
+    if (!followers.length) {
+      console.log(`No servers following game: ${game.name}`);
+      return;
+    }
 
-    console.log({patchNote})
-    console.log({game})
-  //   // Get the Discord channel where you want to send the message (You can use the channel ID or name)
-  //   const channel = trackerBot.channels.cache.get(process.env.DISCORD_CHANNEL_ID);
-    
-  //   if (channel) {
-  //     // Send the message to the channel
-  //     await channel.send(messageContent);
-  //     console.log(`Patch for game "${game.name}" sent to Discord.`);
-  //   } else {
-  //     console.error('Discord channel not found.');
-  //   }
+    // Create the embed message
+    const embed = new EmbedBuilder() // Use EmbedBuilder instead of MessageEmbed
+      .setTitle(`New Patch Update for ${game.name}`)
+      .setColor('#0099ff') // You can set the color to anything you like
+      .setDescription(patchNote.content)
+      .addFields(
+        { name: 'Title', value: patchNote.title, inline: false }, // Inline false
+        { name: 'Release Date', value: patchNote.releaseDate, inline: true }, // Inline true
+        { 
+          name: 'Patch Details', 
+          value: patchNote.sections.length > 0 ? patchNote.sections[0].bullets.join('\n- ') : 'No details available', 
+          inline: false 
+        }
+      )
+      .setURL(patchNote.link) 
+      .setFooter({ text: `Game: ${game.name}` })
+      .setTimestamp();
+
+    // Send to each server that follows this game
+    for (const follower of followers) {
+      const serverId = follower.serverId;
+      const guild = trackerBot.guilds.cache.get(serverId);
+      if (guild) {
+        const defaultChannel = guild.systemChannel || guild.channels.cache.find(ch => ch.type === 'GUILD_TEXT');
+        if (defaultChannel) {
+          await defaultChannel.send({ embeds: [embed] });
+          console.log(`Patch for game "${game.name}" sent to server: ${guild.name}`);
+        } else {
+          console.error(`No appropriate text channel found in server: ${guild.name}`);
+        }
+      } else {
+        // Bot is not in the server, deleting entry from the Follow model
+        console.error(`Bot is not in the server with ID: ${serverId}`);
+        await Follow.deleteOne({ serverId });
+        console.log(`Server with ID ${serverId} has been removed from the follow list.`);
+      }
+    }
   } catch (error) {
     console.error('Error sending patch to Discord:', error.message);
   }
