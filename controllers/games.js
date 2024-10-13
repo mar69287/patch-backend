@@ -9,7 +9,7 @@ export {
 
     async function getGames(req, res) {
         try {
-            const games = await Game.find();
+            const games = await Game.find().sort({ name: 1 });
             const genres = await Genre.find();
             const platforms = await Platform.find();
     
