@@ -39,6 +39,8 @@ export const savePatchToDatabase = async (game, patchDetails) => {
 const sendPatchToDiscord = async (game, patchNote) => {
   try {
     const followers = await Follow.find({ followedGames: game.slug });
+    console.log({game})
+    console.log({followers})
 
     if (!followers.length) {
       console.log(`No servers following game: ${game.name}`);
