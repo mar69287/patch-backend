@@ -39,14 +39,15 @@ export const postPatchToTwitter = async (game, patchNote) => {
     if (patchNote.releaseDate) {
       tweetText += `Released on: ${new Date(patchNote.releaseDate).toLocaleDateString()}\n`;
     }
+    
+    if (patchNote.link) {
+      tweetText += `Here: (${patchNote.link})`;
+    }
 
     if (patchNote.sections.length > 0 && patchNote.sections[0]?.bullets?.length > 0) {
       tweetText += `Details:\n- ${patchNote.sections[0].bullets.join('\n- ')}\n`;
     }
 
-    if (patchNote.link) {
-      tweetText += `Read More Here: (${patchNote.link})`;
-    }
 
     if (tweetText.length > 280) {
       tweetText = tweetText.slice(0, 277) + '...';
