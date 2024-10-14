@@ -32,6 +32,10 @@ export const postPatchToTwitter = async (game, patchNote) => {
   try {
     let tweetText = `New Patch for *${game.name}*!\n\n`;
 
+    const encodedLink = encodeURI(patchNote.link);
+    console.log("Original Link:", patchNote.link);
+    console.log("Encoded Link:", encodedLink);
+
     if (patchNote.title) {
       tweetText += `Title: ${patchNote.title}\n`;
     }
@@ -39,9 +43,9 @@ export const postPatchToTwitter = async (game, patchNote) => {
     if (patchNote.releaseDate) {
       tweetText += `Released on: ${new Date(patchNote.releaseDate).toLocaleDateString()}\n`;
     }
-    
+
     if (patchNote.link) {
-      tweetText += `Here: (${patchNote.link})`;
+      tweetText += `Here: ${encodedLink}`;
     }
 
     if (patchNote.sections.length > 0 && patchNote.sections[0]?.bullets?.length > 0) {
