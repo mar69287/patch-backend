@@ -28,28 +28,28 @@ const uploadImage = async (imageUrl) => {
   }
 };
 
-// const resolveFinalUrl = async (shortUrl) => {
-//   try {
-//     // Make a request to the shortened URL and follow redirects
-//     const response = await axios.get(shortUrl, { maxRedirects: 5 });
+const resolveFinalUrl = async (shortUrl) => {
+  try {
+    // Make a request to the shortened URL and follow redirects
+    const response = await axios.get(shortUrl, { maxRedirects: 5 });
     
-//     // The final URL after redirects
-//     return response.request.res.responseUrl;
-//   } catch (error) {
-//     console.error('Error resolving final URL:', error);
-//     return shortUrl; // Fall back to the shortened URL if there's an error
-//   }
-// };
+    // The final URL after redirects
+    return response.request.res.responseUrl;
+  } catch (error) {
+    console.error('Error resolving final URL:', error);
+    return shortUrl; // Fall back to the shortened URL if there's an error
+  }
+};
 
 export const postPatchToTwitter = async (game, patchNote) => {
   try {
     let tweetText = `New Patch for *${game.name}*!\n\n`;
-    // const finalUrl = await resolveFinalUrl(patchNote.link);
+    const finalUrl = await resolveFinalUrl(patchNote.link);
 
     const encodedLink = encodeURI(patchNote.link);
     console.log("Original Link:", patchNote.link);
     console.log("Encoded Link:", encodedLink);
-    // console.log({finalUrl})
+    console.log({finalUrl})
 
     if (patchNote.title) {
       tweetText += `Title: ${patchNote.title}\n`;
