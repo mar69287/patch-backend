@@ -3,9 +3,25 @@ import pkg from 'discord.js';
 const { EmbedBuilder } = pkg; 
 import Follow from '../models/follow.js';
 import { postPatchToTwitter } from '../twitter/twitterClient.js';
+import axios from 'axios';
+
+const resolveFinalUrl = async (shortUrl) => {
+  try {
+    // Make a request to the shortened URL and follow redirects
+    const response = await axios.get(shortUrl, { maxRedirects: 5 });
+    
+    // The final URL after redirects
+    return response.request.res.responseUrl;
+  } catch (error) {
+    console.error('Error resolving final URL:', error);
+    return shortUrl; // Fall back to the shortened URL if there's an error
+  }
+};
 
 export const savePatchToDatabase = async (game, patchDetails) => {
   try {
+    const finalUrl = await resolveFinalUrl(patchDetails.url);
+    console.log('final url in discord sample:', finalUrl)
     const newPatchNote = {
       title: patchDetails.title,
       content: patchDetails.content,
