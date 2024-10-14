@@ -1,5 +1,19 @@
 import { savePatchToDatabase } from './databaseUtils.js';
 import Game from '../models/game.js';
+import axios from 'axios';
+
+const resolveFinalUrl = async (shortUrl) => {
+  try {
+    // Make a request to the shortened URL and follow redirects
+    const response = await axios.get(shortUrl, { maxRedirects: 5 });
+    
+    // The final URL after redirects
+    return response.request.res.responseUrl;
+  } catch (error) {
+    console.error('Error resolving final URL:', error);
+    return shortUrl; // Fall back to the shortened URL if there's an error
+  }
+};
 
 // Function to process and save message data
 export const handleMessage = async (message) => {
@@ -39,11 +53,16 @@ export const handleMessage = async (message) => {
       patchContent = description.trim();
     }
 
+    let finalUrl = embed.url;
+    if (embed.url) {
+      finalUrl = await resolveFinalUrl(embed.url);
+    }
+
     const patchDetails = {
       title: embed.title,
       content: patchContent,
       createdAt: message.createdAt,
-      url: embed.url,
+      url: finalUrl,
       bullets: bullets 
     };
 
