@@ -25,7 +25,7 @@ async function getPatch(req, res) {
           link: finalUrl,
         };
 
-        console.log({patchNote});
+        // console.log({patchNote});
         res.status(200).json({patchNote, success: true});
     } catch (error) {
         console.error('Error fetching patch details:', error);

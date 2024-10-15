@@ -53,7 +53,7 @@ export async function queryGemini(urlToAnalyze, title) {
         data = await response.text();
       }
   
-      console.log("Response from Gemini API:", data);
+      // console.log("Response from Gemini API:", data);
       return data; 
     } catch (error) {
       console.error('Error querying Gemini:', error);
