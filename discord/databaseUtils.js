@@ -26,7 +26,7 @@ export const savePatchToDatabase = async (game, patchDetails) => {
       title: patchDetails.title,
       content: patchDetails.content,
       // releaseDate: patchDetails.createdAt.toISOString(),
-      releaseDate: patchDetails.createdAt.toLocaleDateString(),
+      releaseDate: patchDetails.createdAt.toISOString(),
       link: finalUrl,
       sections: [
         {
@@ -71,7 +71,7 @@ const sendPatchToDiscord = async (game, patchNote) => {
       .setDescription(patchNote.content)
       .addFields(
         { name: 'Title', value: patchNote.title, inline: false }, 
-        { name: 'Release Date', value: patchNote.releaseDate, inline: true }, 
+        { name: 'Release Date', value: new Date(patchNote.releaseDate).toLocaleDateString(), inline: true }, 
         { 
           name: 'Patch Details', 
           value: patchNote.sections.length > 0 ? patchNote.sections[0].bullets.join('\n- ') : 'No details available', 
