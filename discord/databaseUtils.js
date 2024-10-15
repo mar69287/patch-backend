@@ -25,8 +25,9 @@ export const savePatchToDatabase = async (game, patchDetails) => {
     const newPatchNote = {
       title: patchDetails.title,
       content: patchDetails.content,
-      releaseDate: patchDetails.createdAt.toISOString(),
-      link: patchDetails.url,
+      // releaseDate: patchDetails.createdAt.toISOString(),
+      releaseDate: patchDetails.createdAt.toLocaleDateString(),
+      link: finalUrl,
       sections: [
         {
           bullets: patchDetails.bullets || [],

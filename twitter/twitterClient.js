@@ -60,7 +60,7 @@ export const postPatchToTwitter = async (game, patchNote) => {
     }
 
     if (patchNote.link) {
-      tweetText += `Here: ${encodedLink}`;
+      tweetText += `Here: ${finalUrl}`;
     }
 
     if (patchNote.sections.length > 0 && patchNote.sections[0]?.bullets?.length > 0) {
