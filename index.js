@@ -9,6 +9,7 @@ import { initializeBot, initializeTrackerBot } from './discord/discordClient.js'
 
 import connectDB from './config/database.js';
 import gameRoutes from './routes/gameRoutes.js';
+import patchRoutes from './routes/patchRoutes.js';
 // import userRoutes from './routes/userRoutes.js';
 
 dotenv.config();
@@ -19,6 +20,7 @@ app.use(express.json());
 app.use(morgan('dev'));
 
 app.use('/api/v1/games', gameRoutes);
+app.use('/api/v1/patches', patchRoutes);
 // app.use('/api/v1/users', userRoutes);
 
 app.get('/', async (req, res) => {
