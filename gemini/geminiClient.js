@@ -27,7 +27,7 @@ async function authenticateWithGoogle() {
   return token.token; 
 }
 
-export async function queryGemini(urlToAnalyze) {
+export async function queryGemini(urlToAnalyze, title) {
     try {
       const token = await authenticateWithGoogle();
       
@@ -39,7 +39,7 @@ export async function queryGemini(urlToAnalyze) {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            prompt: `Analyze the webpage at this URL: ${urlToAnalyze} and summarize the patch or update in one sentence. Then extract the detailed patch notes, updates, or changelogs, and present them in a structured format with bullet points under headings such as "Bug Fixes", "Balance Adjustments", or "New Features". Exclude any information about release dates or titles. Summarize only the relevant patch details.`,
+            prompt: `Analyze the webpage at this URL: ${urlToAnalyze} related to the patch "${title}" and summarize the patch or update in one sentence. Then extract the detailed patch notes, updates, or changelogs, and present them in a structured format with bullet points under headings such as "Bug Fixes", "Balance Adjustments", or "New Features". Exclude any information about release dates or titles. Summarize only the relevant patch details for that patch title`,
             model: 'gemini-1.5-pro-002', 
         })
       });

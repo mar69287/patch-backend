@@ -7,12 +7,12 @@ export {
 
 async function getPatch(req, res) {
     try {
-        const { url } = req.body; 
+        const { url, title } = req.body; 
 
         const decodedUrl = decodeURIComponent(url);
         const finalUrl = await resolveFinalUrl(decodedUrl);
         
-        const geminiResponse = await queryGemini(finalUrl);
+        const geminiResponse = await queryGemini(finalUrl, title);
         if (!geminiResponse) {
           return res.status(500).json({ message: "Failed to query Gemini" });
         }
