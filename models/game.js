@@ -5,6 +5,7 @@ const PatchNoteSchema = new mongoose.Schema({
     content: { type: String }, 
     releaseDate: { type: String }, 
     link: { type: String }, 
+    summary: { type: String },
     sections: [{ 
         subtitle: { type: String }, 
         bullets: { type: [String] } 
