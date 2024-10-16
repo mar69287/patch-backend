@@ -66,27 +66,59 @@ const sendPatchToDiscord = async (game, patchNote) => {
     }
 
     // Validate fields before creating the embed
-    const title = patchNote.title || 'No title available';
-    const releaseDate = new Date(patchNote.releaseDate).toLocaleDateString() || 'Unknown date';
-    const patchDetails = patchNote.sections.length > 0 ? patchNote.sections[0].bullets.join('\n- ').slice(0, 1024) : 'No details available'; // Limit to 1024 characters
-    const patchContent = patchNote.content || 'Patch content unavailable';
+    const title = typeof patchNote.title === 'string' && patchNote.title.trim() !== '' ? patchNote.title : 'No title available';
+    const releaseDate = patchNote.releaseDate ? new Date(patchNote.releaseDate).toLocaleDateString() : 'Unknown date';
+    const patchContent = typeof patchNote.content === 'string' && patchNote.content.trim() !== '' ? patchNote.content : 'Patch content unavailable';
+    const patchDetails = patchNote.sections && patchNote.sections.length > 0
+      ? patchNote.sections[0].bullets.filter(bullet => typeof bullet === 'string').join('\n- ').slice(0, 1024) // Limit to 1024 characters
+      : 'No details available';
 
-    // First attempt: create the detailed embed message
-    const embed = new EmbedBuilder()
-      .setTitle(`New Patch Update for ${game.name}`)
-      .setColor('#0099ff')
-      .setDescription(patchContent)
-      .addFields(
-        { name: 'Title', value: title, inline: false },
-        { name: 'Release Date', value: releaseDate, inline: true },
-        { name: 'Patch Details', value: patchDetails, inline: false }
-      )
-      .setURL(patchNote.link)
-      .setFooter({ text: `Game: ${game.name}` })
-      .setTimestamp();
+    // Log the validated fields for debugging
+    console.log("Validated Fields:", {
+      title,
+      releaseDate,
+      patchContent,
+      patchDetails,
+    });
 
-    // Log the embed fields for debugging
-    console.log("Embed Fields:", embed.toJSON().fields);
+    // Check for unexpected data or issues
+    if (title === 'No title available' || releaseDate === 'Unknown date' || patchContent === 'Patch content unavailable') {
+      console.warn('Warning: One or more fields contain default values, indicating potential data issues.', {
+        title,
+        releaseDate,
+        patchContent,
+      });
+    }
+
+    let embed;
+    try {
+      embed = new EmbedBuilder()
+        .setTitle(`New Patch Update for ${game.name}`)
+        .setColor('#0099ff')
+        .setDescription(patchContent)
+        .addFields(
+          { name: 'Title', value: title, inline: false },
+          { name: 'Release Date', value: releaseDate, inline: true },
+          { name: 'Patch Details', value: patchDetails, inline: false }
+        )
+        .setURL(patchNote.link)
+        .setFooter({ text: `Game: ${game.name}` })
+        .setTimestamp();
+
+      console.log("Embed Fields:", embed.toJSON().fields);
+    } catch (embedError) {
+      console.error('Error creating detailed embed:', embedError.message);
+      // Fallback: Create a simpler embed if detailed embed creation fails
+      embed = new EmbedBuilder()
+        .setTitle(`Patch for ${game.name}`)
+        .setColor('#ff6347')
+        .addFields(
+          { name: 'Release Date', value: releaseDate, inline: true },
+          { name: 'Link to Patch', value: `[Read more](${patchNote.link})`, inline: false }
+        )
+        .setTimestamp();
+      console.log('Using simpler embed due to previous error.');
+    }
 
     // Send to each server that follows this game
     for (const follower of followers) {
@@ -107,27 +139,12 @@ const sendPatchToDiscord = async (game, patchNote) => {
       }
 
       try {
-        // Attempt to send the detailed embed
+        // Attempt to send the embed
         console.log(`Attempting to send patch to server: ${guild.name} in channel: ${defaultChannel.name}`);
         await defaultChannel.send({ embeds: [embed] });
         console.log(`Patch for game "${game.name}" sent to server: ${guild.name}`);
       } catch (error) {
-        console.error(`Error sending detailed embed to server: ${guild.name}`, error.message);
-
-        // If the detailed embed fails, create a simpler embed
-        const simpleEmbed = new EmbedBuilder()
-          .setTitle(`Patch for ${game.name}`)
-          .setColor('#ff6347') // Different color to distinguish the fallback embed
-          .addFields(
-            { name: 'Release Date', value: releaseDate, inline: true },
-            { name: 'Link to Patch', value: `[Read more](${patchNote.link})`, inline: false }
-          )
-          .setTimestamp();
-
-        // Send the simpler embed
-        console.log(`Sending simple embed to server: ${guild.name}`);
-        await defaultChannel.send({ embeds: [simpleEmbed] });
-        console.log(`Simple embed for game "${game.name}" sent to server: ${guild.name}`);
+        console.error(`Error sending embed to server: ${guild.name}`, error.message);
       }
     }
   } catch (error) {
@@ -139,6 +156,7 @@ const sendPatchToDiscord = async (game, patchNote) => {
     });
   }
 };
+
 
 
 
