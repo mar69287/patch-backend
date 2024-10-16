@@ -1,0 +1,1800 @@
+{
+  "successfulResolutions": [
+    {
+      "gameName": "Age of Empires 4",
+      "gameSlug": "age-of-empires-4",
+      "patches": [
+        {
+          "patchTitle": "Patch 11.1.1201",
+          "url": "https://www.ageofempires.com/news/age-of-empires-iv-patch-11-1-1201/"
+        },
+        {
+          "patchTitle": "Season Eight Update 11.0.782 Live!",
+          "url": "https://www.ageofempires.com/news/age-of-empires-iv-season-eight-update-11-0-782-live/"
+        },
+        {
+          "patchTitle": "Season Eight Update 11.0.782",
+          "url": "https://www.ageofempires.com/news/age-of-empires-iv-update-11-0-782/"
+        }
+      ]
+    },
+    {
+      "gameName": "Age of Empires II: Definitive Edition",
+      "gameSlug": "age-of-empires-ii-definitive-edition",
+      "patches": [
+        {
+          "patchTitle": "Server Maintenance - Wednesday, September 25",
+          "url": "https://store.steampowered.com/news/app/813780/view/4700158472342173389"
+        },
+        {
+          "patchTitle": "Extended Server Maintenance - Wednesday, August 14",
+          "url": "https://store.steampowered.com/news/app/813780/view/4346622097175065671"
+        },
+        {
+          "patchTitle": "Wololo Map Update 118476",
+          "url": "https://store.steampowered.com/news/app/813780/view/6382246858184308180"
+        },
+        {
+          "patchTitle": "Age of Empires II: Definitive Edition – Update Preview 125283",
+          "url": "https://store.steampowered.com/news/app/813780/view/4701286274906499761"
+        }
+      ]
+    },
+    {
+      "gameName": "Among Us",
+      "gameSlug": "among-us",
+      "patches": [
+        {
+          "patchTitle": "Classic Halloween Hats Return!",
+          "url": "https://store.steampowered.com/news/app/945360/view/4656249009456483311"
+        },
+        {
+          "patchTitle": "Among Us x Ace Attorney",
+          "url": "https://store.steampowered.com/news/app/945360/view/4615714711216393600"
+        },
+        {
+          "patchTitle": "Critical Role Collab and Fixes | Update v2024.8.13",
+          "url": "https://store.steampowered.com/news/app/945360/view/4365762395587163102"
+        }
+      ]
+    },
+    {
+      "gameName": "Brawlhalla",
+      "gameSlug": "brawlhalla",
+      "patches": [
+        {
+          "patchTitle": "Patch 8.14 – Brawlhalla x Mega Man, Balance Changes, Ranked Season 34, and much more!",
+          "url": "https://www.brawlhalla.com/news/mega-man-patch-814"
+        },
+        {
+          "patchTitle": "Battle Pass Season 10: Feel the Magic of the Starlight Champions! – Patch 8.13",
+          "url": "https://www.brawlhalla.com/news/patch-8-13"
+        },
+        {
+          "patchTitle": "Chaos Loves Company in the Brawlhalla: Vault Hunters Crossover Event! – Patch 8.12",
+          "url": "https://www.brawlhalla.com/news/brawlhalla-vault-hunters-patch-812"
+        },
+        {
+          "patchTitle": "One More Week of the Blue Bomber! Brawlhalla x Mega Man",
+          "url": "https://www.brawlhalla.com/news/mega-man-week-3"
+        }
+      ]
+    },
+    {
+      "gameName": "Black Desert Online",
+      "gameSlug": "black-desert-online",
+      "patches": [
+        {
+          "patchTitle": "Update Details - October 9, 2024",
+          "url": "https://www.naeu.playblackdesert.com/en-US/News/Detail?groupContentNo=7671&countryType=en-US"
+        },
+        {
+          "patchTitle": "Patch Notes - October 8, 2024",
+          "url": "https://www.naeu.playblackdesert.com/en-US/News/Detail?groupContentNo=7658&countryType=en-US"
+        },
+        {
+          "patchTitle": "Patch Notes - October 2, 2024",
+          "url": "https://www.naeu.playblackdesert.com/en-US/News/Detail?groupContentNo=7625&countryType=en-US"
+        }
+      ]
+    },
+    {
+      "gameName": "Call of Duty + Warzone",
+      "gameSlug": "call-of-duty-warzone",
+      "patches": [
+        {
+          "patchTitle": "#MW3 #Warzone Patch Notes for October 1st",
+          "url": "https://x.com/CODUpdates/status/1841142848810598634"
+        },
+        {
+          "patchTitle": "#MW3 #Warzone Patch Notes for September 24th",
+          "url": "https://x.com/CODUpdates/status/1838606250281681209"
+        },
+        {
+          "patchTitle": "#MW3 Patch Notes for September 19th",
+          "url": "https://x.com/CODUpdates/status/1836867139481055615"
+        }
+      ]
+    },
+    {
+      "gameName": "Cities: Skylines II",
+      "gameSlug": "cities-skylines-ii",
+      "patches": [
+        {
+          "patchTitle": "Patch Notes 1.1.8f1 - Decorations Patch",
+          "url": "https://steamcommunity.com/games/949230/announcements/detail/4620217676525954574"
+        },
+        {
+          "patchTitle": "Dev Diary: Decorations Patch",
+          "url": "https://steamcommunity.com/games/949230/announcements/detail/4620217676525898547"
+        },
+        {
+          "patchTitle": "Patch Notes 1.1.7f1 - Hotfix",
+          "url": "https://steamcommunity.com/games/949230/announcements/detail/4244161399621773162"
+        }
+      ]
+    },
+    {
+      "gameName": "7 Days to Die",
+      "gameSlug": "7-days-to-die",
+      "patches": [
+        {
+          "patchTitle": "V1.1 b14 Stable",
+          "url": "https://store.steampowered.com/news/app/251570/view/4690026006692407853"
+        },
+        {
+          "patchTitle": "V1.0 b336 Hotfix",
+          "url": "https://store.steampowered.com/news/app/251570/view/6759426324987776290"
+        },
+        {
+          "patchTitle": "V1.1 b14 Stable",
+          "url": "https://store.steampowered.com/news/app/251570/view/4335361829054336691"
+        }
+      ]
+    },
+    {
+      "gameName": "BattleBit Remastered",
+      "gameSlug": "battlebit-remastered",
+      "patches": [
+        {
+          "patchTitle": "What's new in Update 2.2.4?",
+          "url": "https://store.steampowered.com/news/app/671860/view/3869219147450783387"
+        },
+        {
+          "patchTitle": "What's new in Update 2.2.3?",
+          "url": "https://store.steampowered.com/news/app/671860/view/3893988775747010394"
+        },
+        {
+          "patchTitle": "Find out what's new in Update 2.2.2",
+          "url": "https://store.steampowered.com/news/app/671860/view/3870343609911106518"
+        }
+      ]
+    },
+    {
+      "gameName": "Battlefield 2042",
+      "gameSlug": "battlefield-2042",
+      "patches": [
+        {
+          "patchTitle": "UPDATE #8.1.1",
+          "url": "https://answers.ea.com/t5/Updates/BATTLEFIELD-2042-UPDATE-8-1-1/m-p/14133195"
+        },
+        {
+          "patchTitle": "UPDATE #8.1.0",
+          "url": "https://answers.ea.com/t5/Updates/BATTLEFIELD-2042-UPDATE-8-1-0/m-p/14025292"
+        },
+        {
+          "patchTitle": "UPDATE #8.0.1",
+          "url": "https://answers.ea.com/t5/Updates/BATTLEFIELD-2042-UPDATE-8-0-1/m-p/13964529"
+        }
+      ]
+    },
+    {
+      "gameName": "Astroneer",
+      "gameSlug": "astroneer",
+      "patches": [
+        {
+          "patchTitle": "Hotfix: 1.31.78.0",
+          "url": "https://store.steampowered.com/news/app/361420/view/4604455712159666690"
+        },
+        {
+          "patchTitle": "THE ROADTRIP UPDATE",
+          "url": "https://store.steampowered.com/news/app/361420/view/6212233261444726796"
+        },
+        {
+          "patchTitle": "The Verdant Update",
+          "url": "https://store.steampowered.com/news/app/361420/view/4120302266708521916"
+        }
+      ]
+    },
+    {
+      "gameName": "Company of Heroes 3",
+      "gameSlug": "company-of-heroes-3",
+      "patches": [
+        {
+          "patchTitle": "Hot Fix 1.8.1",
+          "url": "https://store.steampowered.com/news/app/1677280/view/4672011608149911707"
+        },
+        {
+          "patchTitle": "Update 1.8.0 Patch Notes",
+          "url": "https://store.steampowered.com/news/app/1677280/view/7449605597514169627"
+        },
+        {
+          "patchTitle": "Hot Fix 1.7.3",
+          "url": "https://store.steampowered.com/news/app/1677280/view/6079382780897810160"
+        }
+      ]
+    },
+    {
+      "gameName": "Back 4 Blood",
+      "gameSlug": "back-4-blood",
+      "patches": [
+        {
+          "patchTitle": "Update - River of Blood",
+          "url": "https://back4blood.com/en-us/patch-notes/december-2022-update"
+        },
+        {
+          "patchTitle": "[October 11, 2022] Update",
+          "url": "https://back4blood.com/en-us/patch-notes/october-2022-update"
+        },
+        {
+          "patchTitle": "[June 7, 2022] Update",
+          "url": "https://back4blood.com/en-us/patch-notes/august-2022-update"
+        }
+      ]
+    },
+    {
+      "gameName": "Borderlands 3",
+      "gameSlug": "borderlands-3",
+      "patches": [
+        {
+          "patchTitle": "Update Notes: Pandora's Box",
+          "url": "https://borderlands.2k.com/borderlands-3/update-notes/"
+        }
+      ]
+    },
+    {
+      "gameName": "Apex Legends",
+      "gameSlug": "apex-legends",
+      "patches": [
+        {
+          "patchTitle": "Take on Turmoil in the Temporal Chaos Collection Event",
+          "url": "https://answers.ea.com/t5/News-Game-Updates/Take-on-Turmoil-in-the-Temporal-Chaos-Collection-Event/m-p/13969076"
+        },
+        {
+          "patchTitle": "Shockwave Patch Notes",
+          "url": "https://answers.ea.com/t5/News-Game-Updates/Apex-Legends-Shockwave-Patch-Notes/m-p/13933766"
+        },
+        {
+          "patchTitle": "DOUBLE DOWN IN THE DOUBLE TAKE COLLECTION EVENT",
+          "url": "https://answers.ea.com/t5/News-Game-Updates/DOUBLE-DOWN-IN-THE-DOUBLE-TAKE-COLLECTION-EVENT/m-p/13832919"
+        }
+      ]
+    },
+    {
+      "gameName": "ARK: Survival Evolved",
+      "gameSlug": "ark-survival-evolved",
+      "patches": [
+        {
+          "patchTitle": "Client v358.17 - Server: v358.17 (Updated: 09/29/2023)",
+          "url": "https://survivetheark.com/index.php?/forums/topic/388254-ase-pc-patch-notes-client-v35817-server-v35817-updated-09292023/"
+        },
+        {
+          "patchTitle": "Client v358.7 - Server: v358.11 (Updated: 08/14/2023)",
+          "url": "https://survivetheark.com/index.php?/forums/topic/388254-ase-pc-patch-notes-client-v35817-server-v35817-updated-09292023/"
+        },
+        {
+          "patchTitle": "Client v358.7 - Server: v358.10 (Updated: 08/01/2023)",
+          "url": "https://survivetheark.com/index.php?/forums/topic/388254-ase-pc-patch-notes-client-v35817-server-v35817-updated-09292023/"
+        }
+      ]
+    },
+    {
+      "gameName": "BeamNG.drive",
+      "gameSlug": "beamngdrive",
+      "patches": [
+        {
+          "patchTitle": "Hotfixes for v0.33 Released",
+          "url": "https://store.steampowered.com/news/app/284160/view/4673136874560803250"
+        },
+        {
+          "patchTitle": "Haul the Harvest in BeamNG.drive v0.33",
+          "url": "https://store.steampowered.com/news/app/284160/view/6470072677794070062"
+        },
+        {
+          "patchTitle": "Hotfixes for v0.32 Released",
+          "url": "https://store.steampowered.com/news/app/284160/view/4205875095228704203"
+        }
+      ]
+    },
+    {
+      "gameName": "Counter-Strike 2",
+      "gameSlug": "counter-strike-2",
+      "patches": [
+        {
+          "patchTitle": "Release Notes for 10/9/2024",
+          "url": "https://store.steampowered.com/news/app/730/view/7514910232813947875"
+        },
+        {
+          "patchTitle": "Release Notes for 10/8/2024",
+          "url": "https://store.steampowered.com/news/app/730/view/4676516476953404526"
+        },
+        {
+          "patchTitle": "Release Notes for 10/15/2024",
+          "url": "https://store.steampowered.com/news/app/730/view/4522268822998171357"
+        }
+      ]
+    },
+    {
+      "gameName": "Dark and Darker",
+      "gameSlug": "dark-and-darker",
+      "patches": [
+        {
+          "patchTitle": "Early Access Hotfix #66",
+          "url": "https://store.steampowered.com/news/app/2016590/view/4692278440722463093"
+        },
+        {
+          "patchTitle": "Early Access Hotfix #65",
+          "url": "https://store.steampowered.com/news/app/2016590/view/4694528972810468180"
+        }
+      ]
+    },
+    {
+      "gameName": "DayZ",
+      "gameSlug": "dayz",
+      "patches": [
+        {
+          "patchTitle": "Experimental Update 1.26 (Change Log)",
+          "url": "https://forums.dayz.com/topic/263334-experimental-update-126-change-log/"
+        },
+        {
+          "patchTitle": "Stable Update 1.25",
+          "url": "https://forums.dayz.com/topic/259858-stable-update-125/"
+        },
+        {
+          "patchTitle": "Stable Update 1.26",
+          "url": "https://forums.dayz.com/topic/264080-stable-update-126/"
+        }
+      ]
+    },
+    {
+      "gameName": "Deadlock",
+      "gameSlug": "deadlock",
+      "patches": [
+        {
+          "patchTitle": "10-10-2024 Update",
+          "url": "https://forums.playdeadlock.com/threads/10-10-2024-update.36958/"
+        },
+        {
+          "patchTitle": "10-07-2024 Update",
+          "url": "https://forums.playdeadlock.com/threads/10-07-2024-update.36441/"
+        },
+        {
+          "patchTitle": "10-15-2024 Update",
+          "url": "https://forums.playdeadlock.com/threads/10-15-2024-update.38925/"
+        }
+      ]
+    },
+    {
+      "gameName": "Core Keeper",
+      "gameSlug": "core-keeper",
+      "patches": [
+        {
+          "patchTitle": "Hotfix - 1.0.0.12",
+          "url": "https://store.steampowered.com/news/app/1621690/view/4690026006674306371"
+        },
+        {
+          "patchTitle": "Core Keeper - 1.0.0.10 Post-Launch Stability Patch",
+          "url": "https://store.steampowered.com/news/app/1621690/view/4690026006670048583"
+        }
+      ]
+    },
+    {
+      "gameName": "Dauntless",
+      "gameSlug": "dauntless",
+      "patches": [
+        {
+          "patchTitle": "1.14.6 - Dec. 14, 2023",
+          "url": "https://playdauntless.com/patch-notes/1-14-6/"
+        },
+        {
+          "patchTitle": "1.14.4 - Jul. 13, 2023",
+          "url": "https://playdauntless.com/patch-notes/1-14-4/"
+        }
+      ]
+    },
+    {
+      "gameName": "Conan Exiles",
+      "gameSlug": "conan-exiles",
+      "patches": [
+        {
+          "patchTitle": "New Update Now Live, with News for Next Age",
+          "url": "https://store.steampowered.com/news/app/440900/view/6190841163199841519"
+        },
+        {
+          "patchTitle": "Age of War Chapter 4 Hotfix (5.14.2024)",
+          "url": "https://store.steampowered.com/news/app/440900/view/4174351172252441318"
+        }
+      ]
+    },
+    {
+      "gameName": "Cyberpunk 2077",
+      "gameSlug": "cyberpunk-2077",
+      "patches": [
+        {
+          "patchTitle": "Patch 2.13",
+          "url": "https://www.cyberpunk.net/en/news/50818/patch-2-13"
+        },
+        {
+          "patchTitle": "Patch 2.12",
+          "url": "https://www.cyberpunk.net/en/news/49912/patch-2-12"
+        }
+      ]
+    },
+    {
+      "gameName": "Baldur's Gate 3",
+      "gameSlug": "baldurs-gate-3",
+      "patches": [
+        {
+          "patchTitle": "Hotfix #27 Now Live!",
+          "url": "https://store.steampowered.com/news/app/1086940/view/4692277806504493493"
+        },
+        {
+          "patchTitle": "Hotfix #26 Now Live!",
+          "url": "https://store.steampowered.com/news/app/1086940/view/4694528972792310160"
+        }
+      ]
+    },
+    {
+      "gameName": "ARK: Survival Ascended",
+      "gameSlug": "ark-survival-ascended",
+      "patches": [
+        {
+          "patchTitle": "Client v54.12 - Server: v54.11 (Updated: 10/08/2024)",
+          "url": "https://survivetheark.com/index.php?/forums/topic/708761-asa-pc-patch-notes-client-v5422-server-v5422-updated-10082024/"
+        },
+        {
+          "patchTitle": "Client v53.9 - Server: v53.13 (Updated: 10/01/2024)",
+          "url": "https://survivetheark.com/index.php?/forums/topic/708761-asa-pc-patch-notes-client-v5422-server-v5422-updated-10082024/"
+        },
+        {
+          "patchTitle": "Client v54.22 - Server: v54.22 (Updated: 10/08/2024)",
+          "url": "https://survivetheark.com/index.php?/forums/topic/708761-asa-pc-patch-notes-client-v5422-server-v5422-updated-10082024/"
+        }
+      ]
+    },
+    {
+      "gameName": "Elder Scrolls Online",
+      "gameSlug": "elder-scrolls-online",
+      "patches": [
+        {
+          "patchTitle": "PC/Mac Patch Notes v10.1.7",
+          "url": "https://forums.elderscrollsonline.com/en/discussion/665732/pc-mac-patch-notes-v10-1-7"
+        },
+        {
+          "patchTitle": "PC/Mac Patch Notes v10.1.6",
+          "url": "https://forums.elderscrollsonline.com/en/discussion/664970/pc-mac-patch-notes-v10-1-6"
+        }
+      ]
+    },
+    {
+      "gameName": "Final Fantasy XIV",
+      "gameSlug": "final-fantasy-xiv",
+      "patches": [
+        {
+          "patchTitle": "Patch 7.05 Notes",
+          "url": "https://na.finalfantasyxiv.com//lodestone/topics/detail/3a247a30e096e56b701157cd9fb903299a244c2f/"
+        },
+        {
+          "patchTitle": "Patch 7.01 Notes",
+          "url": "https://na.finalfantasyxiv.com//lodestone/topics/detail/0ad1ca4bbafeb2ee244994bee15b3a74c0278e1d/"
+        }
+      ]
+    },
+    {
+      "gameName": "Enshrouded",
+      "gameSlug": "enshrouded",
+      "patches": [
+        {
+          "patchTitle": "Changelog for Hotfix #16",
+          "url": "https://store.steampowered.com/news/app/1203620/view/4361258795950435431"
+        },
+        {
+          "patchTitle": "Changelog for Hotfix #15",
+          "url": "https://store.steampowered.com/news/app/1203620/view/4361258160892622731"
+        }
+      ]
+    },
+    {
+      "gameName": "Genshin Impact",
+      "gameSlug": "genshin-impact",
+      "patches": [
+        {
+          "patchTitle": "Version 5.0 'Genius Invokation TCG' Update Details",
+          "url": "https://genshin.hoyoverse.com/en/news/detail/125440"
+        },
+        {
+          "patchTitle": "'Summertide Scales and Tales' Version 4.8 Update Details",
+          "url": "https://genshin.hoyoverse.com/en/news/detail/124837"
+        }
+      ]
+    },
+    {
+      "gameName": "EA SPORTS FC 25",
+      "gameSlug": "ea-sports-fc-25",
+      "patches": [
+        {
+          "patchTitle": "Language Selection Issue Addressed",
+          "url": "https://store.steampowered.com/news/app/2669320/view/4669760442596142917"
+        },
+        {
+          "patchTitle": "Title Update #2",
+          "url": "https://store.steampowered.com/news/app/2669320/view/4669759808365728548"
+        }
+      ]
+    },
+    {
+      "gameName": "Euro Truck Simulator 2",
+      "gameSlug": "euro-truck-simulator-2",
+      "patches": [
+        {
+          "patchTitle": "Euro Truck Simulator 2 - 1.50 Update Release",
+          "url": "https://store.steampowered.com/news/app/227300/view/4192365570722524816"
+        },
+        {
+          "patchTitle": "Euro Truck Simulator 2: 1.49 Update Release",
+          "url": "https://store.steampowered.com/news/app/227300/view/3880476321506118874"
+        }
+      ]
+    },
+    {
+      "gameName": "Don't Starve Together",
+      "gameSlug": "dont-starve-together",
+      "patches": [
+        {
+          "patchTitle": "Game Update - 632551",
+          "url": "https://forums.kleientertainment.com/game-updates/dst/632551-r2398/"
+        },
+        {
+          "patchTitle": "Game Update - 632435",
+          "url": "https://forums.kleientertainment.com/game-updates/dst/632435-r2397/"
+        }
+      ]
+    },
+    {
+      "gameName": "Grounded",
+      "gameSlug": "grounded",
+      "patches": [
+        {
+          "patchTitle": "Patch 1.4.5 has released!",
+          "url": "https://store.steampowered.com/news/app/962130/view/4664130308822453257"
+        },
+        {
+          "patchTitle": "Patch 1.4.3 is Available",
+          "url": "https://store.steampowered.com/news/app/962130/view/6233625359676335836"
+        }
+      ]
+    },
+    {
+      "gameName": "Microsoft Flight Simulator 2020",
+      "gameSlug": "microsoft-flight-simulator",
+      "patches": [
+        {
+          "patchTitle": "October 10th, 2024 – Development Update",
+          "url": "https://www.flightsimulator.com/october-10th-2024-development-update/"
+        },
+        {
+          "patchTitle": "October 3rd, 2024 – Development Update",
+          "url": "https://www.flightsimulator.com/october-3rd-2024-development-update/"
+        }
+      ]
+    },
+    {
+      "gameName": "Diablo III",
+      "gameSlug": "diablo-iii",
+      "patches": [
+        {
+          "patchTitle": "Season 33: Shades of the Nephalem - Preview",
+          "url": "https://news.blizzard.com/en-us/diablo3/24137819/season-33-shades-of-the-nephalem-preview"
+        },
+        {
+          "patchTitle": "Season 32: Ethereal Memory Preview",
+          "url": "https://news.blizzard.com/en-us/diablo3/24104599/season-32-ethereal-memory-now-live"
+        }
+      ]
+    },
+    {
+      "gameName": "Deep Rock Galactic",
+      "gameSlug": "deep-rock-galactic",
+      "patches": [
+        {
+          "patchTitle": "PATCH NOTES - S05.05",
+          "url": "https://store.steampowered.com/news/app/548430/view/7291979610160623158"
+        },
+        {
+          "patchTitle": "PATCH NOTES - S05.04",
+          "url": "https://store.steampowered.com/news/app/548430/view/4240783699902807894"
+        }
+      ]
+    },
+    {
+      "gameName": "EA SPORTS FC 24",
+      "gameSlug": "ea-sports-fc-24",
+      "patches": [
+        {
+          "patchTitle": "TITLE UPDATE 18.2",
+          "url": "https://store.steampowered.com/news/app/2195250/view/4362383426834424612"
+        },
+        {
+          "patchTitle": "TITLE UPDATE 18",
+          "url": "https://store.steampowered.com/news/app/2195250/view/4362383426816422807"
+        }
+      ]
+    },
+    {
+      "gameName": "EVE Online",
+      "gameSlug": "eve-online",
+      "patches": [
+        {
+          "patchTitle": "Patch Notes for 2024-10-10.1",
+          "url": "https://www.eveonline.com/news/view/patch-notes-version-22-01"
+        }
+      ]
+    },
+    {
+      "gameName": "Heroes of the Storm",
+      "gameSlug": "heroes-of-the-storm",
+      "patches": [
+        {
+          "patchTitle": "Heroes of the Storm Live Patch Notes - August 12, 2024",
+          "url": "https://news.blizzard.com/en-us/heroes-of-the-storm/24126146/heroes-of-the-storm-live-patch-notes-august-12-2024"
+        },
+        {
+          "patchTitle": "Heroes of the Storm Live Patch Notes - October 14, 2024",
+          "url": "https://news.blizzard.com/en-us/heroes-of-the-storm/24145596/heroes-of-the-storm-live-patch-notes-october-14-2024"
+        }
+      ]
+    },
+    {
+      "gameName": "Honkai: Star Rail",
+      "gameSlug": "honkai-star-rail",
+      "patches": [
+        {
+          "patchTitle": "Version 2.5 'Flying Aureus Shot to Lupine Rue' Version Update",
+          "url": "https://hsr.hoyoverse.com/en-us/news/125792"
+        },
+        {
+          "patchTitle": "Version 2.4 'Finest Duel Under the Pristine Blue' Update",
+          "url": "https://hsr.hoyoverse.com/en-us/news/125060"
+        }
+      ]
+    },
+    {
+      "gameName": "DOOM Eternal",
+      "gameSlug": "doom-eternal",
+      "patches": [
+        {
+          "patchTitle": "DOOM Eternal - Update 6.66 Rev 2.2 Release Notes",
+          "url": "https://bethesda.net/en/article/1a2nXhFRThKAAcfviziVpX/doom-eternal-update-6-66-rev-2-2-release-notes"
+        }
+      ]
+    },
+    {
+      "gameName": "Fall Guys: Ultimate Knockout",
+      "gameSlug": "fall-guys-ultimate-knockout",
+      "patches": [
+        {
+          "patchTitle": "The Fall Forever Update",
+          "url": "https://www.fallguys.com/en-US/news/fall-forever-update"
+        }
+      ]
+    },
+    {
+      "gameName": "Farming Simulator 22",
+      "gameSlug": "farming-simulator-22",
+      "patches": [
+        {
+          "patchTitle": "Patch 1.14.0.0",
+          "url": "https://www.farming-simulator.com/changelogs/fs22.php?lang=en&country=us"
+        }
+      ]
+    },
+    {
+      "gameName": "Halls Of Torment",
+      "gameSlug": "halls-of-torment",
+      "patches": [
+        {
+          "patchTitle": "HoT Patch | 2024-10-10",
+          "url": "https://store.steampowered.com/news/app/2218750/view/7011632974053767752"
+        },
+        {
+          "patchTitle": "HoT Fix 2024-09-27",
+          "url": "https://store.steampowered.com/news/app/2218750/view/4682144707314936732"
+        }
+      ]
+    },
+    {
+      "gameName": "Garry's Mod",
+      "gameSlug": "garrys-mod",
+      "patches": [
+        {
+          "patchTitle": "August 2024 Patch",
+          "url": "https://store.steampowered.com/news/app/4000/view/4347747997070682192"
+        },
+        {
+          "patchTitle": "July 2024 Update is live",
+          "url": "https://store.steampowered.com/news/app/4000/view/4347747362015458957"
+        }
+      ]
+    },
+    {
+      "gameName": "Diablo 4",
+      "gameSlug": "diablo-4",
+      "patches": [
+        {
+          "patchTitle": "HOTFIX 2 - October 9, 2024 - 2.0.2",
+          "url": "https://us.forums.blizzard.com/en/d4/t/hotfix-2-october-9-2024-202/194142"
+        },
+        {
+          "patchTitle": "HOTFIX 1 - October 8, 2024 - 2.0.2",
+          "url": "https://us.forums.blizzard.com/en/d4/t/hotfix-1-october-8-2024-202/193530"
+        },
+        {
+          "patchTitle": "HOTFIX 5 - October 15, 2024 - 2.0.2",
+          "url": "https://us.forums.blizzard.com/en/d4/t/hotfix-5-october-15-2024-202/198257"
+        }
+      ]
+    },
+    {
+      "gameName": "ELDEN RING",
+      "gameSlug": "elden-ring",
+      "patches": [
+        {
+          "patchTitle": "Patch Notes Version 1.15",
+          "url": "https://store.steampowered.com/news/app/1245620/view/4690026006691766708"
+        }
+      ]
+    },
+    {
+      "gameName": "Hearthstone",
+      "gameSlug": "hearthstone",
+      "patches": [
+        {
+          "patchTitle": "30.6 Patch Notes",
+          "url": "https://news.blizzard.com/en-us/hearthstone/24145858/30-6-patch-notes"
+        },
+        {
+          "patchTitle": "30.4.3 Patch Notes",
+          "url": "https://news.blizzard.com/en-us/hearthstone/24128997/30-4-3-patch-notes"
+        }
+      ]
+    },
+    {
+      "gameName": "Deep Rock Galactic: Survivor",
+      "gameSlug": "deep-rock-galactic-survivor",
+      "patches": [
+        {
+          "patchTitle": "Hotfix 0.3.35d",
+          "url": "https://store.steampowered.com/news/app/2321470/view/4686647673444695300"
+        }
+      ]
+    },
+    {
+      "gameName": "Destiny 2",
+      "gameSlug": "destiny-2",
+      "patches": [
+        {
+          "patchTitle": "This Week in Destiny – 10/10/2024",
+          "url": "https://www.bungie.net/7/en/News/article/twid_10_10_2024"
+        },
+        {
+          "patchTitle": "Update 8.1.0",
+          "url": "https://www.bungie.net/7/en/News/article/destiny_update_8_1_0"
+        },
+        {
+          "patchTitle": "Destiny 2 Update 8.1.0.1",
+          "url": "https://www.bungie.net/7/en/News/article/destiny_update_8_1_0_1"
+        },
+        {
+          "patchTitle": "Destiny 2 Update 8.1.0.1",
+          "url": "https://www.bungie.net/7/en/News/article/destiny_update_8_1_0_1"
+        }
+      ]
+    },
+    {
+      "gameName": "Dota 2",
+      "gameSlug": "dota-2",
+      "patches": [
+        {
+          "patchTitle": "7.37d Gameplay Patch",
+          "url": "https://store.steampowered.com/news/app/570/view/4690026640907666749"
+        },
+        {
+          "patchTitle": "7.37c Gameplay Patch",
+          "url": "https://store.steampowered.com/news/app/570/view/4581937079687602307"
+        }
+      ]
+    },
+    {
+      "gameName": "Factorio",
+      "gameSlug": "factorio",
+      "patches": [
+        {
+          "patchTitle": "Version 1.1.110",
+          "url": "https://forums.factorio.com/viewtopic.php?t=114845&p=616331"
+        },
+        {
+          "patchTitle": "Version 1.1.109",
+          "url": "https://forums.factorio.com/viewtopic.php?t=113778&p=611609"
+        }
+      ]
+    },
+    {
+      "gameName": "Total War: Warhammer 3",
+      "gameSlug": "total-war-warhammer-3",
+      "patches": [
+        {
+          "patchTitle": "Total War: WARHAMMER III – Update 4.0.0",
+          "url": "https://www.totalwar.com/blog/tww3-update-400/"
+        }
+      ]
+    },
+    {
+      "gameName": "Warframe",
+      "gameSlug": "warframe",
+      "patches": [
+        {
+          "patchTitle": "Koumei & the Five Fates: Hotfix 37.0.5",
+          "url": "https://forums.warframe.com/topic/1418289-koumei-the-five-fates-hotfix-3705/"
+        }
+      ]
+    },
+    {
+      "gameName": "World of Warcraft",
+      "gameSlug": "world-of-warcraft",
+      "patches": [
+        {
+          "patchTitle": "Hotfixes: October 10, 2024",
+          "url": "https://news.blizzard.com/en-us/world-of-warcraft/24134803/hotfixes-october-10-2024"
+        },
+        {
+          "patchTitle": "Hotfixes: October 9, 2024",
+          "url": "https://news.blizzard.com/en-us/world-of-warcraft/24134803/hotfixes-october-8-2024"
+        },
+        {
+          "patchTitle": "Hotfixes: October 14, 2024",
+          "url": "https://news.blizzard.com/en-us/world-of-warcraft/24134803/hotfixes-october-10-2024"
+        },
+        {
+          "patchTitle": "Hotfixes: October 15, 2024",
+          "url": "https://news.blizzard.com/en-us/world-of-warcraft/24134803/hotfixes-october-15-2024"
+        }
+      ]
+    },
+    {
+      "gameName": "Lost Ark",
+      "gameSlug": "lost-ark",
+      "patches": [
+        {
+          "patchTitle": "Arkesia Ignited Release Notes",
+          "url": "https://www.playlostark.com/en-us/news/articles/arkesia-ignited-news-post?tag=release-notes"
+        },
+        {
+          "patchTitle": "Chase the Storm",
+          "url": "https://www.playlostark.com/en-us/news/articles/chase-the-storm?tag=release-notes"
+        }
+      ]
+    },
+    {
+      "gameName": "Enlisted",
+      "gameSlug": "enlisted",
+      "patches": [
+        {
+          "patchTitle": "Update 'Guerrilla Warfare'",
+          "url": "https://store.steampowered.com/news/app/2051620/view/4703537439795544814"
+        },
+        {
+          "patchTitle": "Update 0.6.1.14",
+          "url": "https://store.steampowered.com/news/app/2051620/view/6948580138576371301"
+        }
+      ]
+    },
+    {
+      "gameName": "For Honor",
+      "gameSlug": "for-honor",
+      "patches": [
+        {
+          "patchTitle": "Patch Notes 2.54.1",
+          "url": "https://www.ubisoft.com/en-us/game/for-honor/news-updates/6tuiIhv8fMVkvL5j5MO18m/patch-notes-2541-for-honor"
+        }
+      ]
+    },
+    {
+      "gameName": "Lethal Company",
+      "gameSlug": "lethal-company",
+      "patches": [
+        {
+          "patchTitle": "The Bag Patch - Version 64",
+          "url": "https://store.steampowered.com/news/app/1966720/view/4589819013353456831"
+        }
+      ]
+    },
+    {
+      "gameName": "Last Epoch",
+      "gameSlug": "last-epoch",
+      "patches": [
+        {
+          "patchTitle": "Last Epoch Hotfix 1.1.7.5",
+          "url": "https://forum.lastepoch.com/t/last-epoch-hotfix-1-1-7-5/74092"
+        }
+      ]
+    },
+    {
+      "gameName": "Legends of Runeterra",
+      "gameSlug": "legends-of-runeterra",
+      "patches": [
+        {
+          "patchTitle": "Patch 5.10 Notes",
+          "url": "https://playruneterra.com/en-us/news/game-updates/patch-5-10-notes/"
+        }
+      ]
+    },
+    {
+      "gameName": "NARAKA: BLADEPOINT",
+      "gameSlug": "naraka-bladepoint",
+      "patches": [
+        {
+          "patchTitle": "NARAKA: BLADEPOINT Update – Sep. 24, 2024",
+          "url": "https://www.narakathegame.com/news/update/20240911/33459_1180112.html"
+        }
+      ]
+    },
+    {
+      "gameName": "Manor Lords",
+      "gameSlug": "manor-lords",
+      "patches": [
+        {
+          "patchTitle": "[0.8.002] Open beta update",
+          "url": "https://store.steampowered.com/news/app/1363080/view/4683269973726734742"
+        }
+      ]
+    },
+    {
+      "gameName": "StarCraft II",
+      "gameSlug": "starcraft-ii",
+      "patches": [
+        {
+          "patchTitle": "StarCraft II 5.0.13 Patch Notes",
+          "url": "https://news.blizzard.com/en-us/starcraft2/24078322/starcraft-ii-5-0-13-patch-notes"
+        }
+      ]
+    },
+    {
+      "gameName": "Guild Wars 2",
+      "gameSlug": "guild-wars-2",
+      "patches": [
+        {
+          "patchTitle": "2024-10-08 - October 8th Release Notes",
+          "url": "https://en-forum.guildwars2.com/topic/152263-2024-10-08-october-8th-release-notes/"
+        },
+        {
+          "patchTitle": "Game Update Notes: October 15, 2024",
+          "url": "https://en-forum.guildwars2.com/topic/152721-game-update-notes-october-15-2024/"
+        },
+        {
+          "patchTitle": "Game Update Notes: October 15, 2024",
+          "url": "https://en-forum.guildwars2.com/topic/152721-game-update-notes-october-15-2024/"
+        }
+      ]
+    },
+    {
+      "gameName": "Icarus",
+      "gameSlug": "icarus",
+      "patches": [
+        {
+          "patchTitle": "Hotfix Version: 2.2.23.128261-rel-Laika",
+          "url": "https://store.steampowered.com/news/app/1149460/view/4686648941183630392"
+        }
+      ]
+    },
+    {
+      "gameName": "HELLDIVERS 2",
+      "gameSlug": "helldivers-2",
+      "patches": [
+        {
+          "patchTitle": "Patch 1.001.103",
+          "url": "https://store.steampowered.com/news/app/553850/view/4677641107705631270"
+        }
+      ]
+    },
+    {
+      "gameName": "Fallout 76",
+      "gameSlug": "fallout-76",
+      "patches": [
+        {
+          "patchTitle": "Milepost Zero Hotfix – September, 17 2024",
+          "url": "https://store.steampowered.com/news/app/1151340/view/7147864422085699247"
+        }
+      ]
+    },
+    {
+      "gameName": "Hell Let Loose",
+      "gameSlug": "hell-let-loose",
+      "patches": [
+        {
+          "patchTitle": "Update 15.2 Hotfix",
+          "url": "https://store.steampowered.com/news/app/686810/view/4586441947207546071"
+        }
+      ]
+    },
+    {
+      "gameName": "Sons of the Forest",
+      "gameSlug": "sons-of-the-forest",
+      "patches": [
+        {
+          "patchTitle": "Hotfix",
+          "url": "https://store.steampowered.com/news/app/1326470/view/4183362170393954332"
+        }
+      ]
+    },
+    {
+      "gameName": "Squad",
+      "gameSlug": "squad",
+      "patches": [
+        {
+          "patchTitle": "SQUAD 8.1 RELEASE NOTES",
+          "url": "https://www.joinsquad.com//updates/squad-8-1-release-notes"
+        }
+      ]
+    },
+    {
+      "gameName": "Spectre Divide",
+      "gameSlug": "spectre-divide",
+      "patches": [
+        {
+          "patchTitle": "Spectre Divide Update | October 08 | Patch Notes",
+          "url": "https://store.steampowered.com/news/app/2641470/view/4672012242408131088"
+        },
+        {
+          "patchTitle": "Upcoming Scheduled Downtime - Oct 15, 9AM PT - 10:30 AM PT",
+          "url": "https://store.steampowered.com/news/app/2641470/view/4508757661095525818"
+        },
+        {
+          "patchTitle": "Spectre Divide Update | October 15 | Patch Notes + FREE OUTFIT",
+          "url": "https://store.steampowered.com/news/app/2641470/view/4508757661095596539"
+        },
+        {
+          "patchTitle": "Spectre Divide Update | October 15 | Patch Notes + FREE OUTFIT",
+          "url": "https://store.steampowered.com/news/app/2641470/view/4508757661095596539"
+        }
+      ]
+    },
+    {
+      "gameName": "Star Citizen",
+      "gameSlug": "star-citizen",
+      "patches": [
+        {
+          "patchTitle": "[All Waves PTU] Star Citizen Alpha 3.24.2 PTU.9366112 Patch Notes",
+          "url": "https://robertsspaceindustries.com/spectrum/community/SC/forum/190048/thread/star-citizen-alpha-3-24-2-ptu-patch-notes-9"
+        }
+      ]
+    },
+    {
+      "gameName": "Hearts of Iron 4",
+      "gameSlug": "hearts-of-iron-4",
+      "patches": [
+        {
+          "patchTitle": "Hotfix | Patch 1.14.7 Checksum: f03b",
+          "url": "https://store.steampowered.com/news/app/394360/view/4184488070316569026"
+        }
+      ]
+    },
+    {
+      "gameName": "The First Descendant",
+      "gameSlug": "the-first-descendant",
+      "patches": [
+        {
+          "patchTitle": "The First Descendant Update 1.1.4",
+          "url": "https://store.steampowered.com/news/app/2074920/view/4660753243335414176"
+        },
+        {
+          "patchTitle": "The First Descendant Hotfix 1.1.4b",
+          "url": "https://store.steampowered.com/news/app/2074920/view/7365165544804129716"
+        }
+      ]
+    },
+    {
+      "gameName": "Starfield",
+      "gameSlug": "starfield",
+      "patches": [
+        {
+          "patchTitle": "Starfield’s Shattered Space Expansion Is Available Now",
+          "url": "https://store.steampowered.com/news/app/1716740/view/4674263407980534339"
+        }
+      ]
+    },
+    {
+      "gameName": "Team Fortress 2",
+      "gameSlug": "team-fortress-2",
+      "patches": [
+        {
+          "patchTitle": "Team Fortress 2 Update Released",
+          "url": "https://www.teamfortress.com/post.php?id=230553"
+        },
+        {
+          "patchTitle": "Team Fortress 2 Update Released",
+          "url": "https://www.teamfortress.com/post.php?id=230723"
+        }
+      ]
+    },
+    {
+      "gameName": "The Division 2",
+      "gameSlug": "the-division-2",
+      "patches": [
+        {
+          "patchTitle": "Title Update 21.5",
+          "url": "https://store.steampowered.com/news/app/2221490/view/4678767007609186866"
+        }
+      ]
+    },
+    {
+      "gameName": "Satisfactory",
+      "gameSlug": "satisfactory",
+      "patches": [
+        {
+          "patchTitle": "1.0 Fixes v1.0.0.3",
+          "url": "https://store.steampowered.com/news/app/526870/view/4653997209640642309"
+        },
+        {
+          "patchTitle": "1.0 Fixes v1.0.0.4",
+          "url": "https://store.steampowered.com/news/app/526870/view/4505379961376082330"
+        }
+      ]
+    },
+    {
+      "gameName": "The Finals",
+      "gameSlug": "the-finals",
+      "patches": [
+        {
+          "patchTitle": "Update 4.2.0",
+          "url": "https://store.steampowered.com/news/app/2073850/view/4681020076582577099"
+        }
+      ]
+    },
+    {
+      "gameName": "SMITE",
+      "gameSlug": "smite",
+      "patches": [
+        {
+          "patchTitle": "Demon Scourge | 11.10 Update Notes",
+          "url": "https://www.smitegame.com/news/demon-scourge-11-10-update-notes"
+        }
+      ]
+    },
+    {
+      "gameName": "No Man's Sky",
+      "gameSlug": "no-mans-sky",
+      "patches": [
+        {
+          "patchTitle": "Aquarius 5.12",
+          "url": "https://www.nomanssky.com/2024/09/aquarius-5-12/"
+        }
+      ]
+    },
+    {
+      "gameName": "The Outlast Trials",
+      "gameSlug": "the-outlast-trials",
+      "patches": [
+        {
+          "patchTitle": "Countdown | Hotfix Patch Notes",
+          "url": "https://store.steampowered.com/news/app/1304930/view/6471198577686609703"
+        }
+      ]
+    },
+    {
+      "gameName": "League of Legends",
+      "gameSlug": "league-of-legends",
+      "patches": [
+        {
+          "patchTitle": "10/10/2024 MID-PATCH UPDATE 1 Nilah",
+          "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-20-notes/"
+        }
+      ]
+    },
+    {
+      "gameName": "Risk of Rain 2",
+      "gameSlug": "risk-of-rain-2",
+      "patches": [
+        {
+          "patchTitle": "Seekers of the Storm - First Patch",
+          "url": "https://steamcommunity.com/games/632360/announcements/detail/4608959311771420256"
+        }
+      ]
+    },
+    {
+      "gameName": "XDefiant",
+      "gameSlug": "xdefiant",
+      "patches": [
+        {
+          "patchTitle": "Y1S2.2 Patch Notes",
+          "url": "https://www.ubisoft.com/en-us/game/xdefiant/news/2hW1jix3MCqMT0ZWuU9Ebd/y1s22-patch-notes"
+        }
+      ]
+    },
+    {
+      "gameName": "Phasmophobia",
+      "gameSlug": "phasmophobia",
+      "patches": [
+        {
+          "patchTitle": "Photo Deletion and Vivox | Hotfix v0.10.1.2",
+          "url": "https://steamcommunity.com/games/739630/announcements/detail/6692998230483065043"
+        }
+      ]
+    },
+    {
+      "gameName": "Teamfight Tactics",
+      "gameSlug": "teamfight-tactics",
+      "patches": [
+        {
+          "patchTitle": "Teamfight Tactics patch 14.20 notes",
+          "url": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-14-20-notes/"
+        }
+      ]
+    },
+    {
+      "gameName": "V Rising",
+      "gameSlug": "v-rising",
+      "patches": [
+        {
+          "patchTitle": "V Rising 1.0 Hot Fix #9.1",
+          "url": "https://store.steampowered.com/news/app/1604030/view/4672012242386012745"
+        }
+      ]
+    },
+    {
+      "gameName": "Valorant",
+      "gameSlug": "valorant",
+      "patches": [
+        {
+          "patchTitle": "Patch Notes 9.07",
+          "url": "https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-9-07/"
+        }
+      ]
+    },
+    {
+      "gameName": "RuneScape (Old School)",
+      "gameSlug": "runescape-old-school",
+      "patches": [
+        {
+          "patchTitle": "Wintertodt Updates & Varlamore Drop Rates",
+          "url": "https://secure.runescape.com/m=news/wintertodt-updates--varlamore-drop-rates?oldschool=1"
+        }
+      ]
+    },
+    {
+      "gameName": "THRONE AND LIBERTY",
+      "gameSlug": "throne-and-liberty",
+      "patches": [
+        {
+          "patchTitle": "10/5 Hotfix",
+          "url": "https://store.steampowered.com/news/app/2429640/view/4681019441660326102"
+        }
+      ]
+    },
+    {
+      "gameName": "Warhammer 40,000: Space Marine 2",
+      "gameSlug": "warhammer-40000-space-marine-2",
+      "patches": [
+        {
+          "patchTitle": "Space Marine 2 - Hotfix 3.1",
+          "url": "https://store.steampowered.com/news/app/2183900/view/4696782040358852370"
+        }
+      ]
+    },
+    {
+      "gameName": "PUBG: BATTLEGROUNDS",
+      "gameSlug": "pubg-battlegrounds",
+      "patches": [
+        {
+          "patchTitle": "Patch Notes - Update 32.1",
+          "url": "https://steamcommunity.com/games/578080/announcements/detail/4695656140434234331"
+        }
+      ]
+    },
+    {
+      "gameName": "MultiVersus",
+      "gameSlug": "multiversus",
+      "patches": [
+        {
+          "patchTitle": "1.3.2 Patch Notes",
+          "url": "https://multiversus.com/en/news/1-3-2-patch-notes"
+        },
+        {
+          "patchTitle": "Season 3 1.3.3 Midseason Patch Notes",
+          "url": "https://multiversus.com/en/news/season-3-1-3-3-midseason-patch-notes"
+        },
+        {
+          "patchTitle": "Season 3 1.3.3 Midseason Patch Notes",
+          "url": "https://multiversus.com/en/news/season-3-1-3-3-midseason-patch-notes"
+        }
+      ]
+    },
+    {
+      "gameName": "PAYDAY 2",
+      "gameSlug": "payday-2",
+      "patches": [
+        {
+          "patchTitle": "240.7 hotfix",
+          "url": "https://steamcommunity.com/games/218620/announcements/detail/6973349936513333614"
+        }
+      ]
+    },
+    {
+      "gameName": "Tekken 8",
+      "gameSlug": "tekken-8",
+      "patches": [
+        {
+          "patchTitle": "Patch Notes V1.08",
+          "url": "https://www.bandainamcoent.com/news/tekken-8-patch-notes-v1-08"
+        }
+      ]
+    },
+    {
+      "gameName": "Palworld",
+      "gameSlug": "palworld",
+      "patches": [
+        {
+          "patchTitle": "Update v0.3.9",
+          "url": "https://steamcommunity.com/games/1623730/announcements/detail/4700159105838148811"
+        }
+      ]
+    },
+    {
+      "gameName": "Monster Hunter Rise",
+      "gameSlug": "monster-hunter-rise",
+      "patches": [
+        {
+          "patchTitle": "Notification of Patch Ver.16.0.2.0",
+          "url": "https://store.steampowered.com/news/app/1446780/view/3970553140557253785"
+        }
+      ]
+    },
+    {
+      "gameName": "Once Human",
+      "gameSlug": "once-human",
+      "patches": [
+        {
+          "patchTitle": "Once Human Version 1.2 Bug Fixes",
+          "url": "https://steamcommunity.com/games/2139460/announcements/detail/4659627343418093816"
+        },
+        {
+          "patchTitle": "Version 1.3 Update Announcement",
+          "url": "https://steamcommunity.com/games/2139460/announcements/detail/4533527459035521028"
+        }
+      ]
+    },
+    {
+      "gameName": "New World",
+      "gameSlug": "new-world",
+      "patches": [
+        {
+          "patchTitle": "Season of Opportunity Announcement",
+          "url": "https://www.newworld.com/en-us/news/articles/season-of-opportunity-announcement?tag=updates"
+        },
+        {
+          "patchTitle": "New World: Aeternum Launch Update",
+          "url": "https://www.newworld.com/en-us/news/articles/new-world-aeternum-launch-update?tag=updates"
+        }
+      ]
+    },
+    {
+      "gameName": "VRChat",
+      "gameSlug": "vrchat",
+      "patches": [
+        {
+          "patchTitle": "Release 2024.3.3 Is Now Live!",
+          "url": "https://store.steampowered.com/news/app/438100/view/4667509277699692497"
+        }
+      ]
+    },
+    {
+      "gameName": "Mount & Blade II: Bannerlord",
+      "gameSlug": "mount-and-blade-ii-bannerlord",
+      "patches": [
+        {
+          "patchTitle": "Patch Notes v1.2.10",
+          "url": "https://steamcommunity.com/games/261550/announcements/detail/4238531900073310115"
+        }
+      ]
+    },
+    {
+      "gameName": "Warhammer 40,000: Darktide",
+      "gameSlug": "warhammer-40000-darktide",
+      "patches": [
+        {
+          "patchTitle": "Hotfix #50 (1.5.3) - Patch Notes",
+          "url": "https://store.steampowered.com/news/app/1361210/view/4653997843897243444"
+        }
+      ]
+    },
+    {
+      "gameName": "Overwatch 2",
+      "gameSlug": "overwatch-2",
+      "patches": [
+        {
+          "patchTitle": "BUG FIXES",
+          "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/"
+        },
+        {
+          "patchTitle": "October 14, 2024",
+          "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/"
+        },
+        {
+          "patchTitle": "October 14, 2024",
+          "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/"
+        }
+      ]
+    },
+    {
+      "gameName": "SCUM",
+      "gameSlug": "scum",
+      "patches": [
+        {
+          "patchTitle": "SCUM - Hotfix 0.9.543.81099",
+          "url": "https://store.steampowered.com/news/app/513710/view/4674263407983665781"
+        }
+      ]
+    },
+    {
+      "gameName": "Raft",
+      "gameSlug": "raft",
+      "patches": [
+        {
+          "patchTitle": "1.09 - Update to network code",
+          "url": "https://steamcommunity.com/games/648800/announcements/detail/3649636149237406558"
+        }
+      ]
+    },
+    {
+      "gameName": "RuneScape",
+      "gameSlug": "runescape",
+      "patches": [
+        {
+          "patchTitle": "October Patch Week - This Week In RuneScape",
+          "url": "https://secure.runescape.com/m=news/october-patch-week----this-week-in-runescape"
+        },
+        {
+          "patchTitle": "Harvest Hollow Launches Today - This Week In RuneScape",
+          "url": "https://secure.runescape.com/m=news/harvest-hollow-launches-today---this-week-in-runescape"
+        }
+      ]
+    },
+    {
+      "gameName": "Ready or Not",
+      "gameSlug": "ready-or-not",
+      "patches": [
+        {
+          "patchTitle": "Home Invasion Patch 3 Changelog",
+          "url": "https://store.steampowered.com/news/app/1144200/view/4357881096253357848"
+        }
+      ]
+    },
+    {
+      "gameName": "Stellaris",
+      "gameSlug": "stellaris",
+      "patches": [
+        {
+          "patchTitle": "3.13.2 patch",
+          "url": "https://store.steampowered.com/news/app/281990/view/4697907306036605825"
+        }
+      ]
+    },
+    {
+      "gameName": "Sea of Thieves",
+      "gameSlug": "sea-of-thieves",
+      "patches": [
+        {
+          "patchTitle": "Hotfix – 3.1.2.1",
+          "url": "https://www.seaofthieves.com/release-notes/3.1.2.1"
+        }
+      ]
+    },
+    {
+      "gameName": "The Isle",
+      "gameSlug": "the-isle",
+      "patches": [
+        {
+          "patchTitle": "Patch 0.16.189 is now available!",
+          "url": "https://store.steampowered.com/news/app/376210/view/7448479697622000200"
+        }
+      ]
+    },
+    {
+      "gameName": "World of Warcraft: Classic",
+      "gameSlug": "world-of-warcraft-classic",
+      "patches": [
+        {
+          "patchTitle": "Hotfixes: October 3, 2024",
+          "url": "https://us.forums.blizzard.com/en/wow/t/wow-classic-era-and-hardcore-hotfixes-october-3/756850"
+        }
+      ]
+    },
+    {
+      "gameName": "Skull and Bones",
+      "gameSlug": "skull-and-bones",
+      "patches": [
+        {
+          "patchTitle": "DevBlog: Factions",
+          "url": "https://www.ubisoft.com/en-us/game/skull-and-bones/news-updates/1PiCFYo6yF899ib7MeID5a/devblog-factions"
+        },
+        {
+          "patchTitle": "Y1S3.2 Patch Notes",
+          "url": "https://www.ubisoft.com/en-us/game/skull-and-bones/news-updates/2XoxvNpldMAzjW9VX0lpFj/y1s32-patch-notes"
+        }
+      ]
+    },
+    {
+      "gameName": "Rust",
+      "gameSlug": "rust",
+      "patches": [
+        {
+          "patchTitle": "The World Update 2.0",
+          "url": "https://store.steampowered.com/news/app/252490/view/4688900740985785454"
+        }
+      ]
+    },
+    {
+      "gameName": "World of Warships",
+      "gameSlug": "world-of-warships",
+      "patches": [
+        {
+          "patchTitle": "Update 13.9: Red October",
+          "url": "https://worldofwarships.com/en/news/game-updates/update-139-red-october/"
+        }
+      ]
+    },
+    {
+      "gameName": "RimWorld",
+      "gameSlug": "rimworld",
+      "patches": [
+        {
+          "patchTitle": "Update 1.5.4104 released",
+          "url": "https://store.steampowered.com/news/app/294100/view/4183359634554411988"
+        }
+      ]
+    },
+    {
+      "gameName": "osu!",
+      "gameSlug": "osu",
+      "patches": [
+        {
+          "patchTitle": "Stable v20241001",
+          "url": "https://osu.ppy.sh/home/changelog/stable40/20241001"
+        }
+      ]
+    },
+    {
+      "gameName": "Valheim",
+      "gameSlug": "valheim",
+      "patches": [
+        {
+          "patchTitle": "Patch 0.218.21 (Hotfix)",
+          "url": "https://steamcommunity.com/games/892970/announcements/detail/4572930514767467545"
+        }
+      ]
+    },
+    {
+      "gameName": "Vermintide 2",
+      "gameSlug": "vermintide-2",
+      "patches": [
+        {
+          "patchTitle": "Versus Alpha Test extended to June 17th! Hotfix 5.6.6",
+          "url": "https://steamcommunity.com/games/552500/announcements/detail/4160842903734551759"
+        }
+      ]
+    },
+    {
+      "gameName": "Paladins",
+      "gameSlug": "paladins",
+      "patches": [
+        {
+          "patchTitle": "April Foals Update Notes",
+          "url": "https://www.paladins.com/news/april-foals-update-notes"
+        }
+      ]
+    },
+    {
+      "gameName": "Unturned",
+      "gameSlug": "unturned",
+      "patches": [
+        {
+          "patchTitle": "3.24.5.1 Patch Notes",
+          "url": "https://store.steampowered.com/news/app/304930/view/4279069370771611003"
+        }
+      ]
+    },
+    {
+      "gameName": "World of Tanks",
+      "gameSlug": "world-of-tanks",
+      "patches": [
+        {
+          "patchTitle": "Update 1.26: Hailstorm",
+          "url": "https://worldoftanks.eu/en/content/docs/release_notes/release-notes-1-26/?utm_source=wot-portal&utm_medium=button&utm_campaign=no_sale_eu"
+        },
+        {
+          "patchTitle": "Update 1.26.1: Echoes of Mirium (October 2024)",
+          "url": "https://worldoftanks.eu/en/content/docs/release_notes/release-notes-1-26-1/?utm_source=wot-portal&utm_medium=button&utm_campaign=no_sale_eu"
+        }
+      ]
+    },
+    {
+      "gameName": "War Thunder",
+      "gameSlug": "war-thunder",
+      "patches": [
+        {
+          "patchTitle": "Update 2.39.0.67: Battle Ratings Implemented",
+          "url": "https://warthunder.com/en/game/changelog/current/1673"
+        },
+        {
+          "patchTitle": "Update 2.39.0.78",
+          "url": "https://warthunder.com/en/game/changelog/current/1674"
+        }
+      ]
+    },
+    {
+      "gameName": "Rainbow Six Siege",
+      "gameSlug": "rainbow-6-siege",
+      "patches": [
+        {
+          "patchTitle": "Y9S3.2 Patch Notes",
+          "url": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/news-updates/28JxJtO5WMnRKyMvlC9Huo/y9s32-patch-notes"
+        }
+      ]
+    }
+  ],
+  "failedResolutions": [
+    {
+      "gameName": "Albion Online",
+      "gameSlug": "albion-online",
+      "patches": [
+        {
+          "patchTitle": "Paths to Glory Patch 4",
+          "url": "https://forum.albiononline.com/index.php/Thread/202777-18-September-2024-Paths-to-Glory-Patch-4/"
+        },
+        {
+          "patchTitle": "Paths to Glory Patch 3",
+          "url": "https://forum.albiononline.com/index.php/Thread/202145-4-September-2024-Paths-to-Glory-Patch-3/"
+        },
+        {
+          "patchTitle": "Paths to Glory Patch 2",
+          "url": "https://forum.albiononline.com/index.php/Thread/201699-21-August-2024-Paths-to-Glory-Patch-2/"
+        }
+      ]
+    },
+    {
+      "gameName": "Borderlands 3",
+      "gameSlug": "borderlands-3",
+      "patches": [
+        {
+          "patchTitle": "Update and Hotfixes [11/18/2021] + Vault Card 3",
+          "url": "https://forums.gearboxsoftware.com/t/borderlands-3-update-and-hotfixes-11-18-2021-vault-card-3/4560145"
+        },
+        {
+          "patchTitle": "Hotfix [10/28/2021]",
+          "url": "https://forums.gearboxsoftware.com/t/borderlands-3-hotfix-10-28-2021/4559777"
+        }
+      ]
+    },
+    {
+      "gameName": "Fortnite",
+      "gameSlug": "fortnite",
+      "patches": [
+        {
+          "patchTitle": "Fortnite v31.20 Sep 24 Hotfix: Happy 7th Birthday to Battle Royale!",
+          "url": "https://www.fortnite.com/news/fortnite-v31-20-sep-24-hotfix-happy-7th-birthday-to-battle-royale"
+        },
+        {
+          "patchTitle": "Be a Marvel Hero in Fortnite Battle Royale Chapter 5 Season 4: Absolute Doom!",
+          "url": "https://www.fortnite.com/news/be-a-marvel-hero-in-fortnite-battle-royale-chapter-5-season-4-absolute-doom"
+        },
+        {
+          "patchTitle": "Fortnitemares 2024 Afflicts the Island in Battle Royale v31.40",
+          "url": "https://www.fortnite.com/news/fortnitemares-2024-afflicts-the-island-in-battle-royale-v31-40"
+        }
+      ]
+    },
+    {
+      "gameName": "Fall Guys: Ultimate Knockout",
+      "gameSlug": "fall-guys-ultimate-knockout",
+      "patches": [
+        {
+          "patchTitle": "FALL GUYS SCRAPYARD STUMBLE UPDATE",
+          "url": "https://www.fallguys.com/en-US/news/scrapyard-stumble-update-copy"
+        }
+      ]
+    },
+    {
+      "gameName": "Forza Horizon 5",
+      "gameSlug": "forza-horizon-5",
+      "patches": [
+        {
+          "patchTitle": "October 7th, 2024",
+          "url": "https://support.forzamotorsport.net/hc/en-us/articles/34017131032339-FH5-Release-Notes-October-7th-2024"
+        },
+        {
+          "patchTitle": "September 10th, 2024",
+          "url": "https://support.forzamotorsport.net/hc/en-us/articles/33105900466579-FH5-Release-Notes-September-10th-2024"
+        }
+      ]
+    },
+    {
+      "gameName": "Minecraft Dungeons",
+      "gameSlug": "minecraft-dungeons",
+      "patches": [
+        {
+          "patchTitle": "1.17.0.0 - November 30, 2022",
+          "url": "https://help.minecraft.net/hc/en-us/articles/360044268272-Minecraft-Dungeons-Patch-Notes"
+        }
+      ]
+    },
+    {
+      "gameName": "Grand Theft Auto 5",
+      "gameSlug": "grand-theft-auto-5",
+      "patches": [
+        {
+          "patchTitle": "Update 1.69 - September 25, 2024 - PC",
+          "url": "https://support.rockstargames.com/articles/30693392257683/GTAV-Title-Update-1-69-Notes-PS5-PS4-Xbox-Series-X-S-Xbox-One-PC"
+        }
+      ]
+    },
+    {
+      "gameName": "Halo: The Master Chief Collection",
+      "gameSlug": "halo-the-master-chief-collection",
+      "patches": [
+        {
+          "patchTitle": "Halo: The Master Chief Collection (MCC) Update – February 2024",
+          "url": "https://support.halowaypoint.com//hc/en-us/articles/23707515298324-Halo-The-Master-Chief-Collection-MCC-Update-February-2024"
+        }
+      ]
+    },
+    {
+      "gameName": "Red Dead Redemption 2",
+      "gameSlug": "red-dead-redemption-2",
+      "patches": [
+        {
+          "patchTitle": "Update 1.32",
+          "url": "https://support.rockstargames.com/articles/27571099657235/Red-Dead-Redemption-2-Title-Update-1-32-Notes-PS4-Xbox-One-PC"
+        }
+      ]
+    },
+    {
+      "gameName": "Path of Exile",
+      "gameSlug": "path-of-exile",
+      "patches": [
+        {
+          "patchTitle": "3.25.1b Hotfix 2",
+          "url": "https://www.pathofexile.com/forum/view-thread/3578453"
+        }
+      ]
+    },
+    {
+      "gameName": "Rocket League",
+      "gameSlug": "rocket-league",
+      "patches": [
+        {
+          "patchTitle": "Patch Notes v2.44",
+          "url": "https://www.rocketleague.com/en/news/patch-notes-v2-44"
+        }
+      ]
+    },
+    {
+      "gameName": "Minecraft",
+      "gameSlug": "minecraft",
+      "patches": [
+        {
+          "patchTitle": "Minecraft Java Edition - 1.21.2 Pre-Release 2",
+          "url": "https://feedback.minecraft.net/hc/en-us/articles/30951327727885-Minecraft-Java-Edition-1-21-2-Pre-Release-2"
+        }
+      ]
+    }
+  ]
+}
