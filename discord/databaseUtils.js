@@ -4,6 +4,7 @@ const { EmbedBuilder } = pkg;
 import Follow from '../models/follow.js';
 import { postPatchToTwitter } from '../twitter/twitterClient.js';
 import axios from 'axios';
+import { updatePatchDetails } from '../gemini/databaseUpdate.js';
 
 const resolveFinalUrl = async (shortUrl) => {
   try {
@@ -25,7 +26,6 @@ export const savePatchToDatabase = async (game, patchDetails) => {
     const newPatchNote = {
       title: patchDetails.title,
       content: patchDetails.content,
-      // releaseDate: patchDetails.createdAt.toISOString(),
       releaseDate: patchDetails.createdAt.toISOString(),
       link: finalUrl,
       sections: [
@@ -43,9 +43,10 @@ export const savePatchToDatabase = async (game, patchDetails) => {
 
     console.log(`Patch for game "${game.name}" has been added to the database.`);
 
-    // After saving the game, send the latest patch to the Discord server and post to twitter
+    // After saving the game, send the latest patch to the Discord server, post to twitter and update patch details with gemini
     await sendPatchToDiscord(game, newPatchNote);
     await postPatchToTwitter(game, newPatchNote);
+    await updatePatchDetails(game, newPatchNote);
     
   } catch (error) {
     console.error('Error saving patch to the database:', error.message);
